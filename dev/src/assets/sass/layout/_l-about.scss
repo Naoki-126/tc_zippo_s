@@ -1,0 +1,12 @@
+@use "../global" as global;
+
+.l-about {
+  margin: 0 auto;
+  background: url(../img/about-screen.png)0% 50%/cover,url(../img/about-bg.png)no-repeat 50% 50%/cover;
+  width: 100%;
+  height: auto;
+
+  @include global.mq(sp) {
+    background-position: 81% 50%;
+  }
+}

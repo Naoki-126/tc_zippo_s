@@ -1,0 +1,17 @@
+@use "../global" as global;
+
+.l-brand {
+  margin: 0 auto;
+  margin-top: -100px;
+  // background: linear-gradient(rgba(77, 77, 77, .3),rgba(77, 77, 77, .3)),url(../img/brand-bg__right.png)no-repeat 100% -10.5%, url(/assets/img/brand-bg__left.png)no-repeat 0% 36%, url(/assets/img/brand-bg__right2.png) no-repeat 100% 86%, url(/assets/img/brand-bg.png) no-repeat center center /cover;
+  background: url(../img/brand-bg__right.png)no-repeat 100% -10.5%, url(../img/brand-bg__left.png)no-repeat 0% 36%, url(../img/brand-bg__right2.png) no-repeat 100% 86%,url(../img/brand-bg.png) no-repeat center center /cover;
+  transform: skewY(-3deg);
+  width: 100%;
+  height: auto;
+
+  @include global.mq(sp) {
+    background: url(../img/brand-bgSp.png) no-repeat 100% 124%,url(../img/brand-bg__sp.png)no-repeat center center /cover;
+    transform: skewY(-6deg);
+    margin-top: -92px;
+  }
+}

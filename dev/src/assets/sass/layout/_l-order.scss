@@ -1,0 +1,34 @@
+@use "../global" as global;
+
+.l-order {
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+  background: linear-gradient(270deg, #C1272D 0%, #ED1C24 47.92%, #C1272D 100%);
+  padding: 75px 0 117px;
+  text-align: center;
+
+  @include global.mq(sp) {
+    padding: 15px 0 38px;
+  }
+
+  &.-step {
+    background: linear-gradient(270deg, #C1272D 0%, #ED1C24 47.92%, #C1272D 100%);
+    transform: skewY(-3deg);
+    margin-top: -98px;
+    padding: 100px 0 121px;
+
+    @include global.mq(sp) {
+      padding: 27px 0 65px;
+    }
+  }
+
+  &.-voice {
+    padding: 83px 0 121px;
+
+    @include global.mq(sp) {
+      padding: 21px 0 30px;
+    }
+  }
+
+}

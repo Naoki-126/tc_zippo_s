@@ -1,0 +1,177 @@
+@use "../global" as global;
+
+.p-voice {
+  margin: 0 auto;
+  padding: 123px 20px 120px;
+
+  @include global.mq(sp) {
+    padding: 44px 0 63px;
+  }
+}
+
+.p-voice__top {
+  text-align: center;
+}
+
+.p-voice__title {
+  font-size: 60px;
+  font-weight: 700;
+  position: relative;
+  z-index: 10;
+
+  &::after {
+    content: "";
+    position: absolute;
+    background: url(../img/voice.svg) no-repeat center center /contain;
+    width: 174px;
+    height: 68px;
+    bottom: -24%;
+    left: 57.5%;
+    z-index: -1;
+  }
+
+  @include global.mq(sp) {
+    font-size: 40px;
+
+    &::after {
+      width: 123px;
+      height: 48px;
+      bottom: 0%;
+      left: 59%;
+    }
+  }
+}
+
+.p-voice__comments {
+  margin: 97px auto 0px;
+  width: 1000px;
+  max-width: 100%;
+  height: auto;
+  padding: 100px 85px 99px;
+  background: #fff;
+  box-shadow: 0px 4px 40px 13px rgba(0, 0, 0, 0.10);
+
+  @include global.mq(sp) {
+    display: block;
+    margin: 54px auto 0;
+    padding: 21px 22px 37px;
+  }
+}
+
+.p-voice__comment {
+  display: flex;
+
+  &:nth-child(n + 2) {
+    margin-top: 100px;
+  }
+
+  @include global.mq(sp) {
+    flex-direction: column;
+
+    &:nth-child(n + 2) {
+      margin-top: 48px;
+    }
+  }
+
+  &.-revers {
+    flex-direction: row-reverse;
+
+    @include global.mq(sp) {
+      flex-direction: column;
+    }
+  }
+}
+
+.p-voice__left {
+  width: 26.5%;
+
+  @include global.mq(sp) {
+    width: 100%;
+  }
+}
+
+.p-voice__person {
+  width: 150px;
+
+  &.-revers {
+    margin-left: auto;
+  }
+
+  @include global.mq(sp) {
+    margin: 0 auto;
+    padding-left: 11px;
+  }
+
+}
+
+.p-voice__img {
+  img {
+    width: inherit;
+    height: 150px;
+  }
+}
+
+.p-voice__profile {
+  margin-top: 25px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.p-voice__right {
+  width: calc(100% - 26.5%);
+
+  @include global.mq(sp) {
+    width: 100%;
+  }
+}
+
+.p-voice__row {
+  margin-top: 9px;
+  color: #C1272D;
+  font-size: 18px;
+  font-weight: 700;
+  padding-bottom: 4px;
+  border-bottom: 1px solid global.$sub-color;
+
+  &.-second {
+    margin-top: 33px;
+  }
+
+  &.-third {
+    margin-top: 36px;
+  }
+
+  @include global.mq(sp) {
+    text-align: center;
+    margin-top: 23px;
+    padding-bottom: 12px;
+    font-size: 16px;
+
+    &.-second {
+      margin-top: 23px;
+      letter-spacing: -.06em;
+    }
+
+    &.-third {
+      margin-top: 21px;
+    }
+  }
+}
+
+.p-voice__text {
+  margin-top: 20px;
+
+  @include global.mq(sp) {
+    margin-top: 9px;
+    letter-spacing: -.03em;
+  }
+}
+
+.p-voice__text1 {
+  background: linear-gradient(transparent 43%, #FF0 0);
+}
+
+.p-voice__text2 {
+  color: #0071BC;
+  font-weight: 700;
+}

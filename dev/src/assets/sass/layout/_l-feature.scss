@@ -1,0 +1,14 @@
+@use "../global" as global;
+
+.l-feature {
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+  background: linear-gradient(rgba(77, 77, 77, 1),rgba(77, 77, 77, 1)), url(../img/feature-bg.png)no-repeat 50% 50%/ cover;
+  background-blend-mode: multiply;
+  position: relative;
+
+  @include global.mq(sp) {
+    background-position: 30% 50%;
+  }
+}

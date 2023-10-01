@@ -1,0 +1,66 @@
+@use "../global" as global;
+
+.c-btn {
+  background: #F00;
+  padding: 21px 166px 16px;
+  padding: min(1.45833vw, 21px) min(11.527778vw, 166px) min(1.1111vw, 16px);
+  padding:  21px min(11.527778vw, 166px) 16px;
+  border-radius: 10px;
+  display: inline-block;
+  position: relative;
+  border-bottom: 8px solid #a30000;
+
+  &:hover {
+    margin-top: 5px;
+    border-bottom: 3px solid #a30000;;
+  }
+
+  @include global.mq(sp) {
+    padding: 17px 51px 15px;
+    border-bottom: 6px solid #a30000;
+  }
+}
+
+.c-btn__text {
+  text-align: center;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+
+  @include global.mq(sp) {
+    font-size: 14px;
+  }
+
+  &.-black {
+    color: global.$text-color;
+
+    @include global.mq(sp) {
+      font-size: 16px;
+    }
+  }
+}
+
+.c-btn__white {
+  background: linear-gradient(180deg, #ffffff 0%, #ffffff 50%, #f2f2f2 50%, #f2f2f2 100%);
+  padding: 28px 66px 22px 121px;
+  padding: 28px min(4.58333vw,66px) 22px min(8.402778vw, 121px);
+  border-radius: 10px;
+  text-align: center;
+  display: inline-block;
+  border-bottom: 10px solid #e6e6e6;
+
+  &:hover {
+    margin-top: 5px;
+    margin-bottom: -5px;
+    border-bottom: 3px solid #e6e6e6;;
+  }
+
+  @include global.mq(tab) {
+    padding: 28px 66px 22px;
+  }
+
+  @include global.mq(sp) {
+    padding: 10px 52px 6px;
+  }
+
+}

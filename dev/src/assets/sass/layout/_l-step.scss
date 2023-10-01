@@ -1,0 +1,20 @@
+@use "../global" as global;
+
+.l-step {
+  margin: 0 auto;
+  margin-top: -100px;
+  // background: url(/assets/img/point-img.png) no-repeat right 65%,#060A09;
+  background: url(../img/step-bg.png) no-repeat center center/ cover;
+  background: #060A09;
+  transform:skew(0deg, -3deg);
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+
+  @include global.mq(sp) {
+    background: url(../img/step-bg_sp.png) no-repeat center center/ cover;
+    background: #060A09;
+    margin-top: -172px;
+  }
+}

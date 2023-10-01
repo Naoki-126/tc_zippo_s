@@ -1,0 +1,25 @@
+@use "../global" as global;
+
+.c-brand__btn {
+  background: url(../img/brand-btn.png)no-repeat center center /contain;
+  width: 260px;
+  height: 37px;
+
+  @include global.mq(sp) {
+    background: url(../img/brand-btnSp.png)no-repeat center center /contain;
+    width: 140px;
+    height: 21px;
+  }
+
+}
+
+.c-brand__model {
+  color: #fff;
+  font-weight: 700;
+  line-height: normal;
+  text-align: center;
+
+  @include global.mq(sp) {
+    font-size: 10px;
+  }
+}

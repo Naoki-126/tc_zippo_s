@@ -1,0 +1,46 @@
+@use "../global" as global;
+
+.u-fix {
+  position: fixed;
+  bottom: 17px;
+  right: 20px;
+  width: 387px;
+  height: auto;
+  background: rgba(0,90,176,.87);
+  border: 1px solid #fff;
+  z-index: 10;
+
+  @include global.mq(tab) {
+    display: none;
+  }
+
+  @include global.mq(sp) {
+    display: none;
+  }
+}
+
+.u-fix__head {
+  margin: 13px auto 5px;
+  color: #fff;
+  text-align: center;
+
+}
+
+.u-fix__body {
+  display: flex;
+  justify-content: left;
+  margin-left: 20px;
+  margin-bottom: 15px;
+  color: #fff;
+
+  img {
+    width: 50px;
+    height: auto;
+
+  }
+}
+
+.u-fix__number {
+  font-size: 33px;
+  margin-left: 20px;
+}

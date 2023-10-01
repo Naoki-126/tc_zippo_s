@@ -1,0 +1,81 @@
+@use "../global" as global;
+
+.p-about {
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+  padding: 87px 0 82px;
+  padding-left: min(13.88889vw, 200px);
+
+  @include global.mq(sp) {
+    padding: 106px 0 64px;
+  }
+}
+
+.p-about__title {
+
+  @include global.mq(sp) {
+    margin: 0 auto;
+    width: 300px;
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+.p-about__low {
+  margin-top: 52px;
+  color: #fff;
+
+  @include global.mq(sp) {
+    margin-top: 18px;
+  }
+}
+
+.p-about__middle {
+  font-size: 20px;
+  font-weight: 700;
+
+  @include global.mq(sp) {
+    font-size: 16px;
+  }
+}
+
+.p-about__sub {
+  margin-top: 4px;
+  font-size: 56px;
+  font-weight: 700;
+
+  @include global.mq(sp) {
+    font-size: 40px;
+    margin-top: 2px;
+  }
+}
+
+.p-about__tag {
+  margin-top: 18px;
+  display: inline-block;
+  background: #fff;
+  color: #333;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 4px 8px 2px;
+
+  @include global.mq(sp) {
+    margin-top: 31px;
+    font-size: 16px;
+    padding: 2px 6px 1px 4px;
+  }
+}
+
+.p-about__text {
+  width: 745px;
+  max-width: 100%;
+  margin-top: 17px;
+  font-size: 18px;
+  font-weight: 700;
+
+  @include global.mq(sp) {
+    font-size: 16px;
+    letter-spacing: -.04em;
+  }
+}

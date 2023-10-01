@@ -1,0 +1,60 @@
+@use "../global" as global;
+
+.c-drawer {
+  width: 21px;
+  height: 22px;
+  position: relative;
+  z-index: 22;
+  transition: transform .5s ease 0s;
+
+  &.is-open {
+    right: 13px;
+
+    .c-drawer__line{
+      &:nth-child(1) {
+        transform: rotate(-45deg);
+        top: 50%;
+      }
+
+      &:nth-child(2) {
+        display: none;
+      }
+
+      &:nth-child(3) {
+        transform: rotate(45deg);
+        top: 50%;
+      }
+    }
+  }
+}
+
+.c-drawer__line {
+  margin-top: 2px;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  border-radius: 1px;
+  background: global.$main-color;
+
+  &.is-show {
+    background: global.$main-color;
+  }
+
+  &:nth-child(1) {
+    top: 0%;
+    right: -50%;
+  }
+
+  &:nth-child(2) {
+    width: 13.3px;
+    top: 47%;
+    right: -50%;
+    transform: translateY(-50%);
+  }
+
+  &:nth-child(3) {
+    bottom: 0;
+    right: -50%;
+  }
+}

@@ -1,0 +1,25 @@
+@use "../global" as global;
+
+.l-footer {
+  margin: 0 auto;
+  background: global.$text-color;
+  width: 100%;
+  height: auto;
+}
+
+.l-footer__head {
+  padding-top: 49px;
+  text-align: center;
+
+  @include global.mq(sp) {
+    padding-top: 33px;
+  }
+}
+
+.l-footer__body {
+  margin-top: 38px;
+  padding-bottom: 38px;
+  display: flex;
+  justify-content: center;
+
+}

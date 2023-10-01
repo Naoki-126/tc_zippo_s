@@ -1,0 +1,50 @@
+@use "./variables" as global;
+
+// ---
+// メディアクエリー
+// ---
+@mixin mq($breakpoint: sp) {
+	@media #{map-get(global.$breakpoints, $breakpoint)} {
+		@content;
+	}
+}
+
+.is-pc {
+  display: block;
+
+  @include mq('sp') {
+    display: none;
+  }
+
+  @include mq('tab') {
+    display: none;
+  }
+}
+
+// tabのstyleは表示、スマホとPCのstyleは非表示
+.is-tab {
+  display: block;
+
+  @include mq('sp') {
+    display: none;
+  }
+
+  @include mq('pc') {
+    display: none;
+  }
+}
+
+// PCのstyleは表示、スマホのstyleは非表示
+@include mq(sp) {
+  .is-pc {
+    display: none;
+  }
+}
+
+
+// スマホのstyleは表示、PCのstyleは非表示
+@include mq(pc) {
+  .is-sp {
+    display: none;
+  }
+}

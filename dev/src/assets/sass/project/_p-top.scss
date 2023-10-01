@@ -1,0 +1,166 @@
+@use "../global" as global;
+
+.p-top {
+  max-width: 100%;
+  height: auto;
+}
+
+.p-top__title {
+  width: min(55.5556vw, 800px);
+  height: auto;
+  margin-left: 72px;
+
+  @include global.mq(tab) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @include global.mq(sp) {
+    display: none;
+  }
+}
+
+.p-top__title-sp {
+  display: none;
+
+  @include global.mq(sp) {
+    margin: 0 auto;
+    display: block;
+    width: 291px;
+    height: auto;
+  }
+}
+
+.p-top__company {
+  margin-top: 25px;
+  margin-left: 120px;
+  width: min(43.0556vw, 620px);
+  height: auto;
+
+  @include global.mq(tab) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @include global.mq(sp) {
+    display: none;
+  }
+}
+
+.p-top__company-sp {
+  display: none;
+
+  @include global.mq(sp) {
+    display: block;
+    margin: 25px auto 0;
+    text-align: center;
+  }
+}
+
+.p-top__contents {
+  width: 100%;
+  margin-top: 36px;
+  margin-left: min(11.875vw, 171px);
+  position: relative;
+  display: flex;
+  gap: 3px;
+  align-items: flex-start;
+
+  @include global.mq(tab) {
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+  }
+
+  @include global.mq(sp) {
+    margin: 19px auto 0;
+    justify-content: center;
+    gap: 0px;
+  }
+}
+
+.p-top__transfer {
+  margin-top: 27px;
+  // width: min(15.2vw,220px);
+  max-width: 100%;
+  height: auto;
+
+  @include global.mq(sp) {
+    display: none;
+  }
+}
+
+.p-top__transfer-sp {
+  display: none;
+
+  @include global.mq(sp) {
+    display: block;
+    margin-left: 4px;
+  }
+}
+
+.p-top__price {
+  // width: min(16.875vw, 243px);
+  max-width: 100%;
+  height: auto;
+
+
+  @include global.mq(sp) {
+    display: none;
+  }
+}
+
+.p-top__price-sp {
+  display: none;
+
+  @include global.mq(sp) {
+    display: block;
+    margin-left: -1px;
+  }
+}
+
+.p-top__btn {
+  width: 100%;
+  margin-top: -4px;
+  margin-left: min(10.138889vw, 146px);
+
+  @include global.mq(tab) {
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+  }
+
+  @include global.mq(sp) {
+    margin: 2px auto 0;
+    text-align: center;
+
+  }
+}
+
+.p-top__img {
+  width: 100%;
+  height: auto;
+  margin-left: 200px;
+}
+
+.p-top__archive {
+  margin-top: -24px;
+  margin-left: 74px;
+}
+
+.p-top__archiveSp {
+  display: none;
+
+  @include global.mq(sp) {
+    display: block;
+    width: 100%;
+    margin: 15px auto 0;
+    margin-left: 2px;
+    text-align: center;
+
+    img {
+      width: 296px;
+      height: auto;
+    }
+  }
+}

@@ -1,0 +1,74 @@
+@use "../global" as global;
+
+.p-feature {
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+  padding: 187px 0 170px;
+  padding-left: min(50.694444vw, 710px);
+
+  @include global.mq(tab) {
+    margin: 0 auto;
+    padding-left: 0;
+    text-align: center;
+  }
+
+  @include global.mq(sp) {
+    padding: 110px 0 114px;
+  }
+}
+
+.p-feature__title {
+
+  @include global.mq(sp) {
+    margin: 0 auto;
+    width: 300px;
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+.p-feature__low {
+  margin-top: 38px;
+
+  @include global.mq(sp) {
+    margin-top: 44px;
+  }
+
+  @include global.mq(ss) {
+    text-align: left;
+  }
+}
+
+.p-feature__tag {
+  display: inline-block;
+  background: #fff;
+  color: #333;
+  padding: 0 5px;
+  font-size: 24px;
+  font-weight: 700;
+
+  @include global.mq(sp) {
+    font-size: 16px;
+    padding: 2px 22px 1px 10px;
+  }
+}
+
+.p-feature__text {
+  margin-top: 19px;
+  color: #fff;
+  width: 492px;
+  max-width: 100%;
+  height: auto;
+  font-size: 18px;
+
+  @include global.mq(tab) {
+    margin: 19px auto 0;
+    text-align: left;
+  }
+
+  @include global.mq(sp) {
+    margin-top: 12px;
+    font-size: 16px;
+  }
+}

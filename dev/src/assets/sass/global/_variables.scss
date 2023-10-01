@@ -1,0 +1,48 @@
+$main-color: #000000;
+$sub-color: #333333;
+$accent-color: #FF0000;
+$accent-subColor:#ED1C24;
+$text-color: #000000;
+$link-color: #1592e6;
+
+//フォント
+$ff-base: 'Noto Sans CJK JP','Noto Sans JP', "Meiryo", "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif; // 日本語標準
+$ff-logo: 'ヒラギノ明朝 w3','hiragino mincho pro', serif;
+$fz-base: 16px;
+$fw-base: 400;
+$lh-base: 1.48;
+
+// レイアウト
+$wide-width: 1920px;
+$inner-width: 1440px;
+$sp-width: 768px;
+$ss-width:601px;
+
+// ブレークポイント
+$breakpoints: (
+  // 600px以下の場合
+  "ss": "screen and (max-width: #{$ss-width - 1px})",
+  // スマホ以下の場合
+  "sp": "screen and (max-width: #{$sp-width - 1px})",
+  // タブレット以下の場合
+  "tab": "screen and (max-width: #{1000px - 1px})",
+  // タブレット以上の場合
+  "pc": "screen and (min-width: #{$inner-width})"
+);
+
+// 重なり順の定義
+$layer: (
+  // ローディング
+  loading: 300,
+  // モーダル
+  modal: 100,
+  // ドロワー
+  drawer: 40,
+  // フローティング
+  floating: 30,
+  // ヘッダー
+  header: 20,
+  // フッター
+  footer: 10,
+  default: 1
+);

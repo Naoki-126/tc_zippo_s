@@ -1,0 +1,215 @@
+@use "../global" as global;
+
+.p-case {
+  margin: 0 auto;
+  padding: 225px 0;
+
+  @include global.mq(sp) {
+    padding: 152px 0;
+  }
+}
+
+.p-case__top {
+  text-align: center;
+}
+
+.p-case__title {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.2;
+  position: relative;
+  z-index: 10;
+
+  span {
+    font-size: 60px;
+  }
+
+  @include global.mq(sp) {
+    font-size: 28px;
+    line-height: 1.35;
+
+    span {
+      font-size: 40px;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    background: url(../img/case.svg) no-repeat center center/contain;
+    width: 150px;
+    height: 78px;
+    bottom: -23%;
+    left: 56%;
+    z-index: -1;
+
+    @include global.mq(sp) {
+      width: 95px;
+      height: 50px;
+      bottom: -8%;
+      left: 68%;
+    }
+  }
+}
+
+.p-case__lists {
+  margin: 70px auto 0;
+  width: 1000px;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 200px);
+  justify-content: center;
+  gap: 47px  66px;
+
+  @include global.mq(sp) {
+    grid-template-columns: repeat(auto-fit, 250px);
+    margin: 57px auto 0;
+    gap: 50px;
+  }
+}
+
+.p-case__list {
+  width: 200px;
+  height: 380px;
+
+  @include global.mq(sp) {
+
+    &:nth-child(2){
+      margin-top: -24px;
+    }
+
+    &:nth-child(3){
+      margin-top: 30px;
+    }
+
+    &:nth-child(5){
+      margin-top: 59px;
+    }
+
+    &:nth-child(6){
+      margin-top: 88px;
+    }
+
+    &:nth-child(7){
+      margin-top: 29px;
+    }
+
+    &:nth-child(8){
+      margin-top: 28px;
+    }
+  }
+}
+
+.p-case__img {
+  background: #fff;
+  width: 200px;
+  height: 200px;
+  padding: 31px 51px;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  @include global.mq(sp) {
+    width: 250px;
+    height: 250px;
+    padding: 37px 63px;
+
+    img {
+      width: 123px;
+      height: 175px;
+    }
+  }
+}
+
+.p-case__body {
+  margin-top: 13px;
+  width: 215px;
+
+  @include global.mq(sp) {
+    width: 243px;
+  }
+}
+
+.p-case__subTitle {
+  padding-left: 8px;
+  border-left: 8px solid global.$accent-subColor;
+  font-size: 18px;
+  font-weight: 700;
+  color: #333;
+
+  @include global.mq(sp) {
+    font-size: 20px;
+  }
+}
+
+.p-case__price {
+  margin-top: 21px;
+  margin-left: -6px;
+  background: url(../img/case-price.png) no-repeat center center/contain;
+  width: 218px;
+  height: 30px;
+  top: 0;
+  left: 0;
+  display: flex;
+  // justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+  gap: 36px;
+
+  @include global.mq(sp) {
+    width: 250px;
+    height: 32px;
+    margin-top: 29px;
+    margin-left: -4px;
+    gap: 36px;
+  }
+}
+
+.p-case__name {
+  font-size: 12px;
+  font-weight: 700;
+
+  @include global.mq(sp) {
+    font-size: 14px;
+  }
+}
+
+.p-case__money {
+  color: global.$accent-subColor;
+  font-size: 16px;
+  font-weight: 700;
+
+  span {
+    font-size: 28px;
+    font-size: 24px;
+    // letter-spacing: .13em;
+  }
+
+  @include global.mq(sp) {
+    font-size: 18px;
+
+    span {
+      font-size: 32px;
+      font-size: 28px;
+    }
+  }
+}
+
+.p-case__comment {
+  margin-top: 94px;
+  margin-left: 225px;
+
+  @include global.mq(sp) {
+    margin-top: 80px;
+    margin-left: 0;
+  }
+}
+
+.p-case__text {
+
+  @include global.mq(sp) {
+    font-size: 13px;
+  }
+}

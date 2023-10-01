@@ -1,0 +1,31 @@
+@use "../global" as global;
+
+.c-swiper {
+  margin: 0 auto;
+}
+
+.swiper-wrapper {
+  transition-timing-function: linear;
+}
+
+.swiper-slide {
+  overflow: hidden;
+  transition: .7s;
+}
+
+.slider .swiper-slide {
+
+  img {
+    width: min(16.31944vw, 235px);
+    width: 772px;
+    height: min(16.31944vw, 235px);
+    height: 464px;
+  }
+
+  @include global.mq(sp) {
+    img {
+      width: 300px;
+      height: 180px;
+    }
+  }
+}

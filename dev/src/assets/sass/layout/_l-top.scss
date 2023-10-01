@@ -1,0 +1,63 @@
+@use "../global" as global;
+
+.l-top {
+  margin: 0 auto;
+  background:url(../img/top-vector.png) no-repeat right 0%, url(../img/top-background.png) no-repeat center center/ cover;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+
+  @include global.mq(sp) {
+    background: url(../img/top-imgSp.png) no-repeat right 57px, url(../img/top-vector.png) no-repeat right 200%/ 70%, url(../img/top-bg_01\ 2.png) no-repeat bottom right 80%/ cover;
+    width: 100%;
+    height: auto;
+    position: relative;
+
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+    }
+  }
+}
+
+.l-top__nav {
+  display: flex;
+  width: 100%;
+  margin-bottom: 92px;
+
+  @include global.mq(sp) {
+    display: block;
+    margin-bottom: 13px;
+  }
+}
+
+.l-top__left {
+  width: 50%;
+  margin-top: 103px;
+
+  @include global.mq(tab) {
+    width: 100%;
+  }
+
+  @include global.mq(sp) {
+    width: 100%;
+    margin-top: 85px;
+  }
+}
+
+.l-top__right {
+  width: 50%;
+  margin-top: 181px;
+
+  @include global.mq(tab) {
+    display: none;
+  }
+
+  @include global.mq(sp) {
+    display: none;
+  }
+}

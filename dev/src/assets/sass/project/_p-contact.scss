@@ -1,0 +1,393 @@
+@use "../global" as global;
+
+.p-contact {
+  margin: 120px auto 46px;
+
+  @include global.mq(sp) {
+    margin: 56px auto 65px;
+  }
+}
+
+.p-contact__top {
+  text-align: center;
+}
+
+.p-contact__title {
+  font-size: 36px;
+  font-weight: 700;
+  position: relative;
+  padding-left: 23px;
+  z-index: 10;
+
+  span {
+    font-size: 48px;
+    overflow: hidden;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    background: url(../img/contact-logo.svg) no-repeat center center / contain;
+    width: 274px;
+    height: 118px;
+    bottom: -57%;
+    left: 54.5%;
+    z-index: -1;
+  }
+
+  @include global.mq(sp) {
+    font-size: 24px;
+    padding-left: 0;
+
+    span {
+      font-size: 32px;
+      font-size: min(10vw, 32px);
+    }
+
+    &::after {
+      width: 154px;
+      height: 68px;
+      bottom: -41%;
+      left: 48%;
+    }
+  }
+}
+
+.p-contact__form {
+  margin: 94px auto 0;
+  width: 701px;
+  max-width: 100%;
+
+  @include global.mq(sp) {
+    margin-top: 31px;
+  }
+}
+
+.p-contact__dl {
+  padding-bottom: 17px;
+  border-bottom: 1px solid #333;
+
+  &:not(:first-child) {
+    margin-top: 23px;
+  }
+
+  @include global.mq(sp) {
+    padding-bottom: 19px;
+
+    &:not(:first-child) {
+      margin-top: 21px;
+    }
+  }
+}
+
+.p-contact__head {
+  display: flex;
+  align-items: flex-end;
+}
+
+.p-contact__require {
+  font-size: 15px;
+  background: global.$accent-subColor;
+  color: #fff;
+  padding: 1px 10px;
+}
+
+.p-contact__dt {
+  font-size: 18px;
+  color: #333;
+  margin-left: 18px;
+}
+
+.p-contact__dd {
+  margin-top: 16px;
+
+  &.-add {
+    margin-top: 17px;
+
+    @include global.mq(sp) {
+      margin-top: 20px;
+    }
+  }
+
+  [type="text"] {
+    box-shadow: none;
+    appearance: none;
+    color: inherit;
+    font-family: inherit;
+    font-size: 16px;
+    width: 700px;
+    max-width: 100%;
+    height: 50px;
+    background: #F3F3F3;
+    border: 1px solid #BCBCBC;
+    border-radius: 10px;
+  }
+
+  [type="email"] {
+    box-shadow: none;
+    appearance: none;
+    color: inherit;
+    font-family: inherit;
+    font-size: 16px;
+    width: 700px;
+    max-width: 100%;
+    height: 50px;
+    background: #F3F3F3;
+    border: 1px solid #BCBCBC;
+    border-radius: 10px;
+  }
+}
+
+.p-contact__example {
+  margin-top: 18px;
+  color: #000;
+}
+
+.p-contact__kit {
+  margin-top: 6px;
+  padding-bottom: 42px;
+  border-bottom: 1px solid #333;
+
+  @include global.mq(sp) {
+    margin-top: 3px;
+    padding-bottom: 34px;
+  }
+}
+
+.p-contact__radio {
+  margin-top: 20px;
+  margin-left: 18px;
+  font-size: 18px;
+}
+
+.p-contact__row {
+  margin-top: 20px;
+
+  [type="radio"] {
+    display: none;
+  }
+
+  span {
+    display:inline-block;
+    padding-left: 41px;
+    position: relative;
+    margin-right: 69px;
+    margin-right: min(4.7916667vw, 69px);
+    font-size: 20px;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      border: 1px solid global.$accent-subColor;
+      border-radius: 50%;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      background: global.$accent-subColor;
+      border-radius: 50%;
+      top: 50%;
+      left: 5px;
+      transform: translateY(-50%);
+      display: none;
+    }
+  }
+
+  [type="radio"]:checked + span {
+    &::after {
+      display: block;
+    }
+  }
+
+  @include global.mq(sp) {
+    margin-top: 42px;
+
+    span {
+
+      &:nth-child(2) {
+        margin-bottom: 17px;
+      }
+    }
+  }
+}
+
+.p-contact__body {
+  margin-top: 32px;
+
+  @include global.mq(sp) {
+    margin-top: -6px;
+  }
+}
+
+.p-contact__need {
+  max-width: 100%;
+  height: auto;
+
+  @include global.mq(ss) {
+    display: none;
+  }
+}
+
+.p-contact__need-sp {
+  display: none;
+
+  @include global.mq(ss) {
+    display: block;
+    background: url(../img/contact-need__bg.png) no-repeat;
+    width: 299px;
+    max-width: 100%;
+    height: 51px;
+    max-height: 100%;
+    padding: 13px 22px 11px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+}
+
+.p-contact__check {
+  margin-top: 42px;
+  background: #EDAEB2;
+  padding: 56px 10px;
+  font-size: 20px;
+  color: #333;
+  text-align: center;
+
+  [type="checkbox"] {
+    display: none;
+  }
+
+  span {
+    display: inline-block;
+    margin-top: 25px;
+    padding-left: 49px;
+    position: relative;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      border-radius: 6px;
+      background: #fff;
+      border: 1px solid #333;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 20px;
+      height: 12px;
+      border-left: 4px solid global.$accent-subColor;
+      border-bottom: 4px solid global.$accent-subColor;
+      top: 40%;
+      left: 5px;
+      transform: translateY(-50%) rotate(-45deg);
+      display: none;
+    }
+  }
+
+  [type="checkbox"]:checked + span {
+    &::after {
+      display: block;
+    }
+  }
+
+  @include global.mq(sp) {
+    margin-top: 59px;
+    padding: 24px 0 34px;
+    font-size: 18px;
+
+    span {
+      margin-top: 24px;
+      padding-left: 32px;
+
+      &::before {
+        width: 23px;
+        height: 23px;
+      }
+
+      &::after {
+        width: 15px;
+        height: 9px;
+        border-left: 2px solid global.$accent-subColor;
+        border-bottom: 2px solid global.$accent-subColor;
+        top: 40%;
+        left: 5px;
+      }
+    }
+  }
+}
+
+.p-contact__text {
+  font-size: 18px;
+  padding-right: 26px;
+
+  @include global.mq(sp) {
+    font-size: 15px;
+    padding-right: 0;
+  }
+}
+
+.p-contact__text-1 {
+  margin-top: 19px;
+  font-size: 18px;
+  padding: 0 42px;
+
+  a {
+    text-decoration: underline;
+  }
+
+  @include global.mq(sp) {
+    font-size: 12px;
+  }
+}
+
+.p-contact__btn {
+  margin-top: 50px;
+  text-align: center;
+  padding: 0 20px;
+
+  [type="submit"] {
+    text-align: center;
+    display: inline-block;
+    background: global.$accent-subColor;
+    width: 360px;
+    max-width: 100%;
+    height: auto;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 15px 90px;
+    border-radius: 99px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    appearance: none;
+    border: none;
+  }
+
+  @include global.mq(sp) {
+    margin-top: 42px;
+
+    [type="submit"] {
+      padding: 7px 31px;
+    }
+  }
+}

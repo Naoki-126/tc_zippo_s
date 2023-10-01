@@ -1,0 +1,56 @@
+@use "../global" as global;
+
+.p-header {
+  color: #fff;
+}
+
+.p-header__logo {
+  margin-top: 10px;
+  display: inline-block;
+  margin-left: 30px;
+
+  @include global.mq(sp) {
+    width: 100%;
+    margin: 9px auto 0;
+    text-align: center;
+
+  }
+}
+
+.p-header__contact {
+  margin-top: 14px;
+  margin-right: 30px;
+  background: global.$accent-color;
+  padding: 2px 48px;
+  border-radius: 99px;
+}
+
+.p-header__text {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.48;
+  padding: 0 18px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background: url(/assets/img/mail.png)no-repeat center center / contain;
+    width: 20px;
+    height: 20px;
+    top: 50%;
+    left: -18px;
+    transform: translateY(-50%);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    background: url(/assets/img/arrow\ 1.svg)no-repeat center center / contain;
+    width: 10px;
+    height: 18px;
+    top: 50%;
+    right: -10px;
+    transform: translateY(-50%);
+  }
+}
