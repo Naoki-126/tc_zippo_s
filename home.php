@@ -589,62 +589,203 @@
             <div class="p-qa__title">よくあるご質問</div>
           </div>
           <ul class="p-qa__categories">
-            <li class="p-qa__category is-active">買い取りアイテムについて</li>
-            <li class="p-qa__category">申込について</li>
-            <li class="p-qa__category">配送について</li>
-            <li class="p-qa__category">査定について</li>
+            <li id="qa__1" class="p-qa__category is-active">買い取りアイテムについて</li>
+            <li id="qa__2" class="p-qa__category">申込について</li>
+            <li id="qa__3" class="p-qa__category">配送について</li>
+            <li id="qa__4" class="p-qa__category">査定について</li>
           </ul>
-          <div class="p-qa__lists">
-            <div class="p-qa__list">
-              <div class="p-qa__question">ジッポのライター以外にも買取はしていますか？
-                <div class="p-qa__arrow1"></div>
-                <div class="p-qa__arrow2"></div>
+
+          <div id="js-qa__1" class="l-qa__1  is-show">
+            <div class="p-qa__lists">
+              <div class="p-qa__list">
+                <div class="p-qa__question">ジッポのライター以外にも買取はしていますか？
+                  <div class="p-qa__arrow1"></div>
+                </div>
+                <div class="p-qa__answer">いいえ、弊社は<span>ジッポのライター専門</span> の買取業者になります。</div>
               </div>
-              <div class="p-qa__answer">いいえ、弊社は<span>ジッポのライター専門</span> の買取業者になります。</div>
-            </div>
-            <div class="p-qa__list">
-              <div class="p-qa__question">ノーブランドのジッポライターは買取できますか？
-                <div class="p-qa__arrow1"></div>
-                <div class="p-qa__arrow2"></div>
+              <div class="p-qa__list">
+                <div class="p-qa__question">ノーブランドのジッポライターは買取できますか？
+                  <div class="p-qa__arrow1"></div>
+                </div>
+                <div class="p-qa__answer">いいえ、弊社は<span>ジッポのライター専門</span> の買取業者になります。</div>
               </div>
-              <!-- <div class="p-qa__answer">いいえ、弊社は<span>ジッポのライター専門</span> の買取業者になります。</div> -->
-            </div>
-            <div class="p-qa__list">
-              <div class="p-qa__question">買取できる状態を知りたいです。
-                <div class="p-qa__arrow1"></div>
-                <div class="p-qa__arrow2"></div>
+              <div class="p-qa__list">
+                <div class="p-qa__question">買取できる状態を知りたいです。
+                  <div class="p-qa__arrow1"></div>
+                </div>
+                <div class="p-qa__answer">いいえ、弊社は<span>ジッポのライター専門</span> の買取業者になります。</div>
               </div>
-              <!-- <div class="p-qa__answer">いいえ、弊社は<span>ジッポのライター専門</span> の買取業者になります。</div> -->
-            </div>
-            <div class="p-qa__list">
-              <div class="p-qa__question">最低買取点数はありますか？
-                <div class="p-qa__arrow1"></div>
-                <div class="p-qa__arrow2"></div>
+              <div class="p-qa__list">
+                <div class="p-qa__question">最低買取点数はありますか？
+                  <div class="p-qa__arrow1"></div>
+                </div>
+                <div class="p-qa__answer">いいえ、弊社は<span>ジッポのライター専門</span> の買取業者になります。</div>
               </div>
-              <!-- <div class="p-qa__answer">いいえ、弊社は<span>ジッポのライター専門</span> の買取業者になります。</div> -->
-            </div>
-            <div class="p-qa__list">
-              <div class="p-qa__question">どのようなアイテムが高く売れやすいですか？
-                <div class="p-qa__arrow1"></div>
-                <div class="p-qa__arrow2"></div>
+              <div class="p-qa__list">
+                <div class="p-qa__question">どのようなアイテムが高く売れやすいですか？
+                  <div class="p-qa__arrow1"></div>
+                </div>
+                <div class="p-qa__answer">いいえ、弊社は<span>ジッポのライター専門</span> の買取業者になります。</div>
               </div>
-              <!-- <div class="p-qa__answer">いいえ、弊社は<span>ジッポのライター専門</span> の買取業者になります。</div> -->
-            </div>
-            <div class="p-qa__list">
-              <div class="p-qa__question">買取の価格はどのようにして決まるのですか？
-                <div class="p-qa__arrow1"></div>
-                <div class="p-qa__arrow2"></div>
+              <div class="p-qa__list">
+                <div class="p-qa__question">買取の価格はどのようにして決まるのですか？
+                  <div class="p-qa__arrow1"></div>
+                </div>
+                <div class="p-qa__answer">いいえ、弊社は<span>ジッポのライター専門</span> の買取業者になります。</div>
               </div>
-              <!-- <div class="p-qa__answer">いいえ、弊社は<span>ジッポのライター専門</span> の買取業者になります。</div> -->
-            </div>
-            <div class="p-qa__list">
-              <div class="p-qa__question">できるだけ高く売りにはどうしたらいいですか？
-                <div class="p-qa__arrow1"></div>
-                <div class="p-qa__arrow2"></div>
+              <div class="p-qa__list">
+                <div class="p-qa__question">できるだけ高く売りにはどうしたらいいですか？
+                  <div class="p-qa__arrow1"></div>
+                </div>
+                <div class="p-qa__answer">いいえ、弊社は<span>ジッポのライター専門</span> の買取業者になります。</div>
               </div>
-              <!-- <div class="p-qa__answer">いいえ、弊社は<span>ジッポのライター専門</span> の買取業者になります。</div> -->
             </div>
           </div>
+
+          <div id="js-qa__2" class="l-qa__2 animated pulse">
+            <div class="p-qa__lists">
+              <div class="p-qa__list">
+                <div class="p-qa__question">申込みの質問1
+                  <div class="p-qa__arrow1"></div>
+                </div>
+                <div class="p-qa__answer">申込みの<span>回答</span>1</div>
+              </div>
+              <div class="p-qa__list">
+                <div class="p-qa__question">申込みについての質問2？
+                  <div class="p-qa__arrow1"></div>
+                </div>
+                <div class="p-qa__answer">申込みの<span>回答</span>2</div>
+              </div>
+              <div class="p-qa__list">
+                <div class="p-qa__question">申込みについての質問3？
+                  <div class="p-qa__arrow1"></div>
+                </div>
+                <div class="p-qa__answer">申込みの<span>回答</span>3</div>
+              </div>
+              <div class="p-qa__list">
+                <div class="p-qa__question">申込みについての質問4？
+                  <div class="p-qa__arrow1"></div>
+                </div>
+                <div class="p-qa__answer">申込みの<span>回答</span>4</div>
+              </div>
+              <div class="p-qa__list">
+                <div class="p-qa__question">申込みについての質問5？
+                  <div class="p-qa__arrow1"></div>
+                </div>
+                <div class="p-qa__answer">申込みの<span>回答</span>5</div>
+              </div>
+              <div class="p-qa__list">
+                <div class="p-qa__question">申込みについての質問6？
+                  <div class="p-qa__arrow1"></div>
+                </div>
+                <div class="p-qa__answer">申込みの<span>回答</span>6</div>
+              </div>
+              <div class="p-qa__list">
+                <div class="p-qa__question">申込みについての質問7？
+                  <div class="p-qa__arrow1"></div>
+                </div>
+                <div class="p-qa__answer">申込みの<span>回答</span>7</div>
+              </div>
+            </div>
+          </div>
+
+          <div id="js-qa__3" class="l-qa__3 animated pulse">
+            <div class="p-qa__lists">
+              <div class="p-qa__list">
+                <div class="p-qa__question">配送の質問1
+                  <div class="p-qa__arrow1"></div>
+                </div>
+                <div class="p-qa__answer">配送の<span>回答</span>1</div>
+              </div>
+              <div class="p-qa__list">
+                <div class="p-qa__question">配送についての質問2？
+                  <div class="p-qa__arrow1"></div>
+                </div>
+                <div class="p-qa__answer">配送の<span>回答</span>2</div>
+              </div>
+              <div class="p-qa__list">
+                <div class="p-qa__question">配送についての質問3？
+                  <div class="p-qa__arrow1"></div>
+                </div>
+                <div class="p-qa__answer">配送の<span>回答</span>3</div>
+              </div>
+              <div class="p-qa__list">
+                <div class="p-qa__question">配送についての質問4？
+                  <div class="p-qa__arrow1"></div>
+                </div>
+                <div class="p-qa__answer">配送の<span>回答</span>4</div>
+              </div>
+              <div class="p-qa__list">
+                <div class="p-qa__question">配送についての質問5？
+                  <div class="p-qa__arrow1"></div>
+                </div>
+                <div class="p-qa__answer">配送の<span>回答</span>5</div>
+              </div>
+              <div class="p-qa__list">
+                <div class="p-qa__question">配送についての質問6？
+                  <div class="p-qa__arrow1"></div>
+                </div>
+                <div class="p-qa__answer">配送の<span>回答</span>6</div>
+              </div>
+              <div class="p-qa__list">
+                <div class="p-qa__question">配送についての質問7？
+                  <div class="p-qa__arrow1"></div>
+                </div>
+                <div class="p-qa__answer">配送の<span>回答</span>7</div>
+              </div>
+            </div>
+          </div>
+
+          <div id="js-qa__4" class="l-qa__4 animated pulse">
+            <div class="p-qa__lists">
+              <div class="p-qa__list">
+                <div class="p-qa__question">査定の質問1
+                  <div class="p-qa__arrow1"></div>
+                </div>
+                <div class="p-qa__answer">査定の<span>回答</span>1</div>
+              </div>
+              <div class="p-qa__list">
+                <div class="p-qa__question">査定についての質問2？
+                  <div class="p-qa__arrow1"></div>
+                </div>
+                <div class="p-qa__answer">査定の<span>回答</span>2</div>
+              </div>
+              <div class="p-qa__list">
+                <div class="p-qa__question">査定についての質問3？
+                  <div class="p-qa__arrow1"></div>
+                </div>
+                <div class="p-qa__answer">査定の<span>回答</span>3</div>
+              </div>
+              <div class="p-qa__list">
+                <div class="p-qa__question">査定についての質問4？
+                  <div class="p-qa__arrow1"></div>
+                </div>
+                <div class="p-qa__answer">査定の<span>回答</span>4</div>
+              </div>
+              <div class="p-qa__list">
+                <div class="p-qa__question">査定についての質問5？
+                  <div class="p-qa__arrow1"></div>
+                </div>
+                <div class="p-qa__answer">査定の<span>回答</span>5</div>
+              </div>
+              <div class="p-qa__list">
+                <div class="p-qa__question">査定についての質問6？
+                  <div class="p-qa__arrow1"></div>
+                </div>
+                <div class="p-qa__answer">査定の<span>回答</span>6</div>
+              </div>
+              <div class="p-qa__list">
+                <div class="p-qa__question">査定についての質問7？
+                  <div class="p-qa__arrow1"></div>
+                </div>
+                <div class="p-qa__answer">査定の<span>回答</span>7</div>
+              </div>
+            </div>
+          </div>
+
+
+
+
         </div>
       </div>
     </section>

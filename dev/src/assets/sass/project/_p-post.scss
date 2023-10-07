@@ -1,0 +1,89 @@
+@use '../global' as global;
+
+.p-post {
+  margin: 20px auto 70px;
+  width: 1160px;
+  max-width: 100%;
+  height: auto;
+}
+
+.p-post__h1 {
+  font-size: 48px;
+  line-height: 1;
+  font-weight: 700;
+
+  @include global.mq(sp) {
+    font-size: 36px;
+  }
+}
+
+.p-post__h2  h2 {
+  margin-top: 40px;
+  font-size: 36px;
+  line-height: 1.33;
+  font-weight: 700;
+
+  @include global.mq(sp) {
+    font-size: 24px;
+  }
+}
+
+.p-post__h3  h3{
+  margin-top: 40px;
+  font-size: 24px;
+  line-height: 1;
+  font-weight: 700;
+
+  @include global.mq(sp) {
+    font-size: 20px;
+  }
+}
+
+.p-post__text p {
+  margin-top: 20px;
+
+  a {
+    text-decoration: underline;
+    color: #1e90ff;
+  }
+}
+
+.p-post__lists ul {
+  margin: 30px 0 20px;
+}
+
+.p-post__list li {
+  list-style: disc inside;
+}
+
+.wp-block-quote {
+  margin: 0 0 20px;
+  display: inline-block;
+  background: #dcdcdc;
+  padding: 0 16px;
+}
+
+.wp-element-button {
+  margin: 50px 0 20px;
+}
+
+.wp-block-button__link {
+  display: inline-block;
+  background: #fff;
+}
+
+
+table {
+  margin-top: 120px;
+  width: 100%;
+
+    tr {
+      height: 100px;
+    }
+
+    th, td {
+      border: 1px solid #333;
+    }
+
+
+}

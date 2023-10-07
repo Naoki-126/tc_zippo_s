@@ -23,6 +23,11 @@
   background: global.$accent-color;
   padding: 2px 48px;
   border-radius: 99px;
+
+  &:hover {
+    transform: scale(1.05);
+    transition: all .5s ease;
+  }
 }
 
 .p-header__text {
@@ -35,7 +40,7 @@
   &::before {
     content: "";
     position: absolute;
-    background: url(/assets/img/mail.png)no-repeat center center / contain;
+    background: url(../img/mail.png)no-repeat center center / contain;
     width: 20px;
     height: 20px;
     top: 50%;
@@ -46,7 +51,7 @@
   &::after {
     content: "";
     position: absolute;
-    background: url(/assets/img/arrow\ 1.svg)no-repeat center center / contain;
+    background: url(../img/arrow\ 1.svg)no-repeat center center / contain;
     width: 10px;
     height: 18px;
     top: 50%;

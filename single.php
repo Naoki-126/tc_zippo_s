@@ -10,31 +10,39 @@
 get_header();
 ?>
 
-	<main id="primary" class="site-main">
-
+<main class="l-inner -campaign">
+	<div class="l-breadcrumbs">
 		<?php
-		while ( have_posts() ) :
-			the_post();
-
-			get_template_part( 'template-parts/content', get_post_type() );
-
-			the_post_navigation(
-				array(
-					'prev_text' => '<span class="nav-subtitle">' . esc_html__( 'Previous:', 'tc_zippo_s' ) . '</span> <span class="nav-title">%title</span>',
-					'next_text' => '<span class="nav-subtitle">' . esc_html__( 'Next:', 'tc_zippo_s' ) . '</span> <span class="nav-title">%title</span>',
-				)
-			);
-
-			// If comments are open or we have at least one comment, load up the comment template.
-			if ( comments_open() || get_comments_number() ) :
-				comments_template();
-			endif;
-
-		endwhile; // End of the loop.
+			if ( function_exists( 'bcn_display' ) ) {
+				bcn_display();
+			}
 		?>
+	</div>
 
-	</main><!-- #main -->
+	<?php if(have_posts()) :?>
+		<?php while(have_posts()) :?>
+			<?php the_post(); ?>
 
-<?php
-get_sidebar();
-get_footer();
+			<section class="l-kv">
+				<div class="p-kv">
+					<?php if(has_post_thumbnail()): ?>
+						<?php the_post_thumbnail(); ?>
+					<?php else: ?>
+						<img src="<?php echo get_template_directory_uri() ?>" alt="">
+					<?php endif; ?>
+					<p class="p-kv__title"></p>
+				</div>
+			</section>
+
+			<section class="l-post">
+				<div class="p-post">
+					<h1 class="p-post__h1"><?php the_title(); ?></h1>
+					<div class="p-post__text p-post__h2 p-post__h3 p-post__lists p-post__list"><?php the_content(); ?></div>
+				</div>
+			</section>
+
+		<?php endwhile; ?>
+	<?php endif; ?>
+</main>
+
+<?php get_footer(); ?>

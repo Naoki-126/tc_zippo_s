@@ -5,3 +5,79 @@
   width: 100%;
   height: auto;
 }
+
+.l-qa__1 {
+  display: none;
+  animation-name: my-fade-in;
+  animation-duration: 3s;
+
+  @keyframes my-fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  &.is-show {
+    display: block;
+  }
+}
+
+.l-qa__2 {
+  display: none;
+  animation-name: my-fade-in;
+  animation-duration: 3s;
+
+  @keyframes my-fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  &.is-show {
+    display: block;
+  }
+}
+
+.l-qa__3 {
+  display: none;
+  animation-name: my-fade-in;
+  animation-duration: 3s;
+
+  @keyframes my-fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  &.is-show {
+    display: block;
+  }
+}
+
+.l-qa__4 {
+  display: none;
+  animation-name: my-fade-in;
+  animation-duration: 3s;
+
+  @keyframes my-fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  &.is-show {
+    display: block;
+  }
+}
