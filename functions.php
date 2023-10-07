@@ -20,24 +20,6 @@ add_action("wp_enqueue_scripts", "my_script_init");
 
 
 /**
- * サイドバーをwidgetで作成
- */
-function my_widget_init() {
-  register_sidebar(
-    array (
-      'name' => 'サイドバー',
-      'id' => 'sidebar',
-      'before_widget' => '<div id="%1$s" class="widget %2$s">',
-      'after_widget' => '</div>',
-      'before_title' => '<div class="p-aside__title1">',
-      'after_title' => '</div>'
-    )
-  );
-}
-add_action('widgets_init', 'my_widget_init');
-
-
-/**
  * アーカイブタイトル書き換え
  */
 function my_archive_title($title) {
@@ -69,11 +51,21 @@ function my_archive_title($title) {
 add_filter('get_the_archive_title', 'my_archive_title');
 
 /**
- * 外観→メニューリストお表示
+ * 外観→メニューリスト表示
  */
 add_action( 'after_setup_theme', 'register_menu' );
 function register_menu() {
   register_nav_menu( 'primary', __( 'Primary Menu', 'theme-slug' ) );
 }
+
+
+// 表の横幅と高さを自動設定される機能を無効化する
+function customize_tinymce_settings($mceInit) {
+  $mceInit['table_resize_bars'] = false;
+  $mceInit['object_resizing'] = "img";
+  return $mceInit;
+}
+add_filter( 'tiny_mce_before_init', 'customize_tinymce_settings' ,0);
+
 
 ?>

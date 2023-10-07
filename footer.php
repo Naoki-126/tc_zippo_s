@@ -23,10 +23,8 @@
 				</div>
 			</div>
 		</footer>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-		<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+		<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script> -->
 		<script>new WOW().init();</script>
-		<script src="./assets/js/script.js"></script>
 
 		<?php wp_footer(); ?>
 

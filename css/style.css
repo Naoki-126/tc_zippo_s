@@ -176,6 +176,7 @@ a {
 .l-order {
 	background: linear-gradient(270deg, #C1272D 0%, #ED1C24 47.92%, #C1272D 100%);
 	height: auto;
+	height: 351px;
 	margin: 0 auto;
 	padding: 75px 0 117px;
 	text-align: center;
@@ -184,6 +185,7 @@ a {
 
 .l-order.-step {
 	background: linear-gradient(270deg, #C1272D 0%, #ED1C24 47.92%, #C1272D 100%);
+	height: 380px;
 	margin-top: -98px;
 	padding: 100px 0 121px;
 	transform: skewY(-3deg);
@@ -243,6 +245,46 @@ a {
 	width: 100%;
 }
 
+.l-qa__1 {
+	animation-duration: 3s;
+	animation-name: my-fade-in;
+	display: none;
+}
+
+.l-qa__1.is-show {
+	display: block;
+}
+
+.l-qa__2 {
+	animation-duration: 3s;
+	animation-name: my-fade-in;
+	display: none;
+}
+
+.l-qa__2.is-show {
+	display: block;
+}
+
+.l-qa__3 {
+	animation-duration: 3s;
+	animation-name: my-fade-in;
+	display: none;
+}
+
+.l-qa__3.is-show {
+	display: block;
+}
+
+.l-qa__4 {
+	animation-duration: 3s;
+	animation-name: my-fade-in;
+	display: none;
+}
+
+.l-qa__4.is-show {
+	display: block;
+}
+
 .l-feature {
 	background: linear-gradient(rgb(77, 77, 77), rgb(77, 77, 77)), url(../img/feature-bg.png) no-repeat 50% 50%/cover;
 	background-blend-mode: multiply;
@@ -289,6 +331,28 @@ a {
 	justify-content: center;
 	margin-top: 38px;
 	padding-bottom: 38px;
+}
+
+.l-breadcrumbs {
+	margin: 0 auto;
+	max-width: 100%;
+	padding-top: 100px;
+	width: 1160px;
+}
+
+.l-kv {
+	background: #fff;
+	height: auto;
+	margin: 0 auto;
+	max-width: 100%;
+	padding-top: 20px;
+	width: 100%;
+}
+
+.l-post {
+	height: auto;
+	margin: 0 auto;
+	width: 100%;
 }
 
 .c-footer {
@@ -498,6 +562,11 @@ a {
 	padding: 2px 48px;
 }
 
+.p-header__contact:hover {
+	transform: scale(1.05);
+	transition: all 0.5s ease;
+}
+
 .p-header__text {
 	font-size: 18px;
 	font-weight: 700;
@@ -507,7 +576,7 @@ a {
 }
 
 .p-header__text::before {
-	background: url(/assets/img/mail.png) no-repeat center center/contain;
+	background: url(../img/mail.png) no-repeat center center/contain;
 	content: "";
 	height: 20px;
 	left: -18px;
@@ -518,7 +587,7 @@ a {
 }
 
 .p-header__text::after {
-	background: url(/assets/img/arrow\ 1.svg) no-repeat center center/contain;
+	background: url(../img/arrow\ 1.svg) no-repeat center center/contain;
 	content: "";
 	height: 18px;
 	position: absolute;
@@ -1344,11 +1413,16 @@ a {
 	margin: 83px auto 0;
 }
 
+.p-qa__categories li {
+	cursor: pointer;
+}
+
 .p-qa__category {
 	display: inline-block;
 	font-size: 18px;
 	position: relative;
 	text-align: center;
+	transition: all 0.3s ease;
 }
 
 .p-qa__category::after {
@@ -1389,9 +1463,16 @@ a {
 }
 
 .p-qa__question {
+	cursor: pointer;
 	font-size: 18px;
 	padding: 8px 0 11px 66px;
 	position: relative;
+}
+
+.p-qa__question:hover {
+	opacity: 0.7;
+	transform: scale(1.05);
+	transition: all 0.5s ease;
 }
 
 .p-qa__question::before {
@@ -1400,7 +1481,7 @@ a {
 	font-weight: 700;
 	left: -4px;
 	position: absolute;
-	top: 60%;
+	top: 50%;
 	transform: translateY(-50%);
 }
 
@@ -1411,10 +1492,16 @@ a {
 	right: 2px;
 	top: 45%;
 	transform: translateY(-50%);
+	transition: all 0.3s ease;
 	width: 27px;
 }
 
+.p-qa__arrow1.is-open {
+	transform: rotate(180deg);
+}
+
 .p-qa__answer {
+	display: none;
 	font-size: 18px;
 	margin-top: 32px;
 	padding: 8px 0 11px 66px;
@@ -1432,7 +1519,7 @@ a {
 	font-weight: 700;
 	left: -2px;
 	position: absolute;
-	top: 57%;
+	top: 50%;
 	transform: translateY(-50%);
 }
 
@@ -1960,6 +2047,7 @@ a {
 	border-radius: 99px;
 	box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 	color: #fff;
+	cursor: pointer;
 	display: inline-block;
 	font-size: 20px;
 	font-weight: 700;
@@ -1968,6 +2056,11 @@ a {
 	padding: 15px 90px;
 	text-align: center;
 	width: 360px;
+}
+
+.p-contact__btn [type=submit]:hover {
+	transform: scale(1.05);
+	transition: all 0.5s ease;
 }
 
 .p-footer {
@@ -2095,6 +2188,103 @@ a {
 	display: block;
 }
 
+.p-kv {
+	background: url(../img/noimg.png) no-repeat center center/cover;
+	height: 340px;
+	margin: 0 auto;
+	max-width: 100%;
+	overflow: hidden;
+	position: relative;
+	width: 1160px;
+}
+
+.p-kv img {
+	height: auto;
+	max-width: 100%;
+}
+
+.p-kv__title {
+	content: "";
+	left: 50%;
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.p-post {
+	height: auto;
+	margin: 20px auto 70px;
+	max-width: 100%;
+	width: 1160px;
+}
+
+.p-post__h1 {
+	font-size: 48px;
+	font-weight: 700;
+	line-height: 1;
+}
+
+.p-post__h2 h2 {
+	font-size: 36px;
+	font-weight: 700;
+	line-height: 1.33;
+	margin-top: 40px;
+}
+
+.p-post__h3 h3 {
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 1;
+	margin-top: 40px;
+}
+
+.p-post__text p {
+	margin-top: 20px;
+}
+
+.p-post__text p a {
+	color: #1e90ff;
+	text-decoration: underline;
+}
+
+.p-post__lists ul {
+	margin: 30px 0 20px;
+}
+
+.p-post__list li {
+	list-style: disc inside;
+}
+
+.wp-block-quote {
+	background: #dcdcdc;
+	display: inline-block;
+	margin: 0 0 20px;
+	padding: 0 16px;
+}
+
+.wp-element-button {
+	margin: 50px 0 20px;
+}
+
+.wp-block-button__link {
+	background: #fff;
+	display: inline-block;
+}
+
+table {
+	margin-top: 120px;
+	width: 100%;
+}
+
+table tr {
+	height: 100px;
+}
+
+table th,
+table td {
+	border: 1px solid #333;
+}
+
 .u-banner {
 	background: #000000;
 	height: 100px;
@@ -2177,6 +2367,18 @@ a {
 
 .is-sp {
 	display: none;
+}
+
+}
+
+@media screen and (max-width: 1430px) {
+
+.l-order {
+	height: 387px;
+}
+
+.l-order.-step {
+	height: 416px;
 }
 
 }
@@ -2354,10 +2556,12 @@ a {
 }
 
 .l-order {
+	height: 195px;
 	padding: 15px 0 38px;
 }
 
 .l-order.-step {
+	height: 234px;
 	padding: 27px 0 65px;
 }
 
@@ -2391,6 +2595,11 @@ a {
 
 .l-footer__head {
 	padding-top: 33px;
+}
+
+.l-breadcrumbs {
+	font-size: 14px;
+	padding-top: 78px;
 }
 
 .c-footer {
@@ -3335,6 +3544,18 @@ a {
 	z-index: 23;
 }
 
+.p-post__h1 {
+	font-size: 36px;
+}
+
+.p-post__h2 h2 {
+	font-size: 24px;
+}
+
+.p-post__h3 h3 {
+	font-size: 20px;
+}
+
 .u-banner__title {
 	font-size: 24px;
 }
@@ -3427,6 +3648,54 @@ a {
 	overflow: hidden;
 	padding: 13px 22px 11px;
 	width: 299px;
+}
+
+}
+
+@keyframes my-fade-in {
+
+from {
+	opacity: 0;
+}
+
+to {
+	opacity: 1;
+}
+
+}
+
+@keyframes my-fade-in {
+
+from {
+	opacity: 0;
+}
+
+to {
+	opacity: 1;
+}
+
+}
+
+@keyframes my-fade-in {
+
+from {
+	opacity: 0;
+}
+
+to {
+	opacity: 1;
+}
+
+}
+
+@keyframes my-fade-in {
+
+from {
+	opacity: 0;
+}
+
+to {
+	opacity: 1;
 }
 
 }

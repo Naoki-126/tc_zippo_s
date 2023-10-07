@@ -1,0 +1,24 @@
+@use "../global" as global;
+
+.p-kv {
+  margin: 0 auto;
+  width: 1160px;
+  max-width: 100%;
+  height: 340px;
+  overflow: hidden;
+  background: url(../img/noimg.png) no-repeat center center/ cover;
+  position: relative;
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+.p-kv__title {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
