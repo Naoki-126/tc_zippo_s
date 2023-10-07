@@ -10,9 +10,28 @@
 get_header();
 ?>
 
+<main class="l-inner -campaign">
+	<div class="l-breadcrumbs">
+		<?php
+			if ( function_exists( 'bcn_display' ) ) {
+				bcn_display();
+			}
+		?>
+	</div>
 
-<h1>archive</h1>
-<?php
-// get_sidebar();
-get_footer();
-?>
+	<?php if(have_posts()) :?>
+		<?php while(have_posts()) :?>
+			<?php the_post(); ?>
+			<section class="l-kv">
+        </section>
+        <?php echo "archive";?>
+
+        <?php endwhile; ?>
+        <?php endif; ?>
+      </main>
+
+
+
+
+
+<?php get_footer(); ?>

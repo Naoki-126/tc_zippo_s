@@ -8,7 +8,6 @@
             <h1 class="p-top__title-sp"><img src="<?php echo get_template_directory_uri(); ?>/img/top-catch_01 sp.png" alt=""></h1>
             <h2 class="p-top__company"><img src="<?php echo get_template_directory_uri(); ?>/img/top-catch_02 1.png" alt="catch2"></h2>
             <h2 class="p-top__company-sp"><img src="<?php echo get_template_directory_uri(); ?>/img/top-catch_02 sp.png" alt="catch2"></h2>
-            </svg>
             <div class="p-top__contents">
               <div class="p-top__transfer"><img src="<?php echo get_template_directory_uri(); ?>/img/top-transfer.png" alt="top-transfer"></div>
               <div class="p-top__transfer-sp"><img src="<?php echo get_template_directory_uri(); ?>/img/top-transferSp.png" alt="top-transferSp"></div>
@@ -96,7 +95,7 @@
     </section>
     <section class="l-step">
       <div class="l-inner">
-        <div class="p-step">
+        <div class="p-step wow animated fadeIn" data-wow-delay=".5s">
           <div class="p-step__concept">安心・安全・スピーディー</div>
           <div class="p-step__top">
             <div class="p-step__title"><img src="<?php echo get_template_directory_uri(); ?>/img/step-title.png" alt="step-title"></div>
@@ -161,7 +160,7 @@
     </section>
     <section class="l-case">
       <div class="l-inner">
-        <div class="p-case">
+        <div class="p-case wow animated fadeIn" data-wow-delay=".5s">
           <div class="p-case__top">
             <h2 class="p-case__title">ジッポマニアの<br><span>買取実績</span></h2>
           </div>
@@ -270,7 +269,7 @@
     </section>
     <section class="l-brand">
       <div class="l-inner -brand">
-        <div class="p-brand">
+        <div class="p-brand wow animated fadeIn" data-wow-delay=".5s">
           <h2 class="p-brand__title"><img src="<?php echo get_template_directory_uri(); ?>/img/brand-title_h2.png" alt="brand-titile"></h2>
           <h2 class="p-brand__titleSp"><img src="<?php echo get_template_directory_uri(); ?>/img/brand-titleSp.png" alt="brand-titileSp"></h2>
           <ul class="p-brand__lists">
@@ -487,7 +486,7 @@
           </ul>
         </div>
       </div>
-      <div class="p-brand__footer">
+      <div class="p-brand__footer wow animated fadeIn" data-wow-delay=".5s">
         <div class="p-brand__inner">
           <h3 class="p-brand__subTitle"><img src="<?php echo get_template_directory_uri(); ?>/img/brand-subTitle_h2.png" alt="brand-subTitle"></h3>
           <h3 class="p-brand__subTitleSp"><img src="<?php echo get_template_directory_uri(); ?>/img/brand-subSp.png" alt="brand-subSp"></h3>
@@ -519,7 +518,7 @@
     <div class="u-bg__edit"></div>
     <section class="l-voice">
       <div class="l-inner">
-        <div class="p-voice">
+        <div class="p-voice wow animated fadeIn" data-wow-delay=".5s">
           <div class="p-voice__top">
             <h2 class="p-voice__title">お客様の声</h2>
           </div>
@@ -584,7 +583,7 @@
     </section>
     <section class="l-qa">
       <div class="l-inner -qa">
-        <div class="p-qa">
+        <div class="p-qa wow animated fadeIn" data-wow-delay=".5s">
           <div class="p-qa__top">
             <div class="p-qa__title">よくあるご質問</div>
           </div>
@@ -641,7 +640,6 @@
               </div>
             </div>
           </div>
-
           <div id="js-qa__2" class="l-qa__2 animated pulse">
             <div class="p-qa__lists">
               <div class="p-qa__list">
@@ -688,7 +686,6 @@
               </div>
             </div>
           </div>
-
           <div id="js-qa__3" class="l-qa__3 animated pulse">
             <div class="p-qa__lists">
               <div class="p-qa__list">
@@ -735,7 +732,6 @@
               </div>
             </div>
           </div>
-
           <div id="js-qa__4" class="l-qa__4 animated pulse">
             <div class="p-qa__lists">
               <div class="p-qa__list">
@@ -782,16 +778,12 @@
               </div>
             </div>
           </div>
-
-
-
-
         </div>
       </div>
     </section>
     <section class="l-feature">
       <div class="l-inner -feature">
-        <div class="p-feature">
+        <div class="p-feature wow animated fadeIn" data-wow-delay=".5s">
           <div class="p-feature__top">
             <h2 class="p-feature__title"><img src="<?php echo get_template_directory_uri(); ?>/img/feature-logo.png" alt="feature-logo"></h2>
           </div>
@@ -805,7 +797,7 @@
     </section>
     <section class="l-about">
       <div class="l-inner -feature">
-        <div class="p-about">
+        <div class="p-about wow animated fadeIn" data-wow-delay=".5s">
           <div class="p-about__top">
             <h2 class="p-about__title"><img src="<?php echo get_template_directory_uri(); ?>/img/about-logo.png" alt="about-logo"></h2>
           </div>
@@ -821,7 +813,7 @@
     </section>
     <section class="l-campaign">
       <div class="l-inner -campaign">
-        <div class="p-campaign">
+        <div class="p-campaign wow animated fadeIn" data-wow-delay=".5s">
           <div class="p-campaign__top">
             <h2 class="p-campaign__title"><img src="<?php echo get_template_directory_uri(); ?>/img/campaign-logo.png" alt="campaign-logo"></h2>
           </div>
@@ -851,7 +843,7 @@
     </section>
     <section class="l-contact">
       <div class="l-inner -campaign">
-        <div class="p-contact">
+        <div class="p-contact wow animated fadeIn" data-wow-delay=".5s">
           <div class="p-contact__top">
             <h2 class="p-contact__title">宅配買取<br><span>お申し込みフォーム</span></h2>
           </div>

@@ -57,10 +57,12 @@
 }
 
 .wp-block-quote {
-  margin: 0 0 20px;
+  // margin: 0 0 20px;
+  margin: 0;
   display: inline-block;
   background: #dcdcdc;
-  padding: 0 16px;
+  // padding: 0 16px;
+  padding: 0 16px 20px 16px;
 }
 
 .wp-element-button {
