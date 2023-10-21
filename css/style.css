@@ -1042,9 +1042,11 @@ a {
 .p-case__title::after {
 	background: url(../img/case.svg) no-repeat center center/contain;
 	bottom: -23%;
+	bottom: -65%;
 	content: "";
 	height: 78px;
 	left: 56%;
+	left: 65.5%;
 	position: absolute;
 	width: 150px;
 	z-index: -1;
@@ -1802,9 +1804,11 @@ a {
 .p-contact__title::after {
 	background: url(../img/contact-logo.svg) no-repeat center center/contain;
 	bottom: -57%;
+	bottom: -100%;
 	content: "";
 	height: 118px;
 	left: 54.5%;
+	left: 60%;
 	position: absolute;
 	width: 274px;
 	z-index: -1;

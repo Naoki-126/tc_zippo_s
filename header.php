@@ -48,7 +48,7 @@
 					</h1>
 				</div>
 				<div class="l-header__right">
-					<a href="">
+					<a href="#contact">
 						<div class="p-header__contact">
 							<div class="p-header__text">今すぐWEBで申し込む</div>
 						</div>

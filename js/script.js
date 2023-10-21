@@ -54,3 +54,22 @@ jQuery(".p-qa__question").click(function(){
   jQuery(this).next().slideToggle();
   jQuery(this).children('.p-qa__arrow1').toggleClass('is-open');
 });
+
+/* smoothscroll
+=========================== */
+jQuery(function () {
+  // ヘッダーの高さを取得
+  const height = jQuery(".p-header").height();
+  // ヘッダーの高さ分コンテンツを下げる
+  jQuery("main").css("margin-top", height);
+  // ページ内スクロール
+  jQuery('a[href^="#"]').click(function () {
+    const speed = 1000;
+    let href = jQuery(this).attr("href");
+    let target = jQuery(href == "#" || href == "" ? "html" : href);
+    // ヘッダーの高さ分下げる
+    let position = target.offset().top - height;
+    jQuery("body,html").animate({ scrollTop: position }, speed, "swing");
+    return false;
+  });
+});

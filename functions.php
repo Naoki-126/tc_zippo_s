@@ -58,7 +58,6 @@ function register_menu() {
   register_nav_menu( 'primary', __( 'Primary Menu', 'theme-slug' ) );
 }
 
-
 // 表の横幅と高さを自動設定される機能を無効化する
 function customize_tinymce_settings($mceInit) {
   $mceInit['table_resize_bars'] = false;
@@ -67,5 +66,22 @@ function customize_tinymce_settings($mceInit) {
 }
 add_filter( 'tiny_mce_before_init', 'customize_tinymce_settings' ,0);
 
+// 固定ページの画像呼び出しパスの簡略化
+function imagepassshort($arg) {
+  $content = str_replace('"img/', '"' . get_bloginfo('template_directory') . '/img/', $arg);
+  return $content;
+}
+add_action('the_content', 'imagepassshort');
+
+//pタグ自動生成廃止
+add_action('init', function() {
+  remove_filter('the_excerpt', 'wpautop');
+  remove_filter('the_content', 'wpautop');
+  });
+  add_filter('tiny_mce_before_init', function($init) {
+  $init['wpautop'] = false;
+  // $init[‘apply_source_formatting’] = true;
+  return $init;
+  });
 
 ?>

@@ -1,3 +1,5 @@
+<?php /* Template Name: home */?>
+
 <?php get_header(); ?>
 
 <section class="l-top">
@@ -15,9 +17,9 @@
               <div class="p-top__price-sp"><img src="<?php echo get_template_directory_uri(); ?>/img/top-prics-sp.png" alt="top-priceSp"></div>
             </div>
               <div class="p-top__btn">
-                <div class="c-btn -shadow">
+                <a href="#contact" class="c-btn -shadow">
                   <div class="c-btn__text">お申込みはこちら</div>
-                </div>
+                </a>
               </div>
               <div class="p-top__archiveSp"><img src="<?php echo get_template_directory_uri(); ?>/img/top-archiveSp.png" alt="top-archiveSp"></div>
           </div>
@@ -33,9 +35,9 @@
       <div class="p-order__sp1">最短査定当日お振込み＆今なら</div>
       <div class="p-order__sp2">査定金額最大<span>6,000</span>円UP</div>
       <div class="p-order__btn">
-        <button class="c-btn__white">
+        <a href="#contact" class="c-btn__white">
           <p class="c-btn__text -black">かんたん無料買い取りの<br class="is-sp">お申し込みはこちら</p>
-        </button>
+        </a>
       </div>
     </section>
     <section class="l-point">
@@ -153,9 +155,9 @@
       <div class="p-order__sp1 -step">最短査定当日お振込み＆今なら</div>
       <div class="p-order__sp2 -step">査定金額最大<span>6,000</span>円UP</div>
       <div class="p-order__btn -step">
-        <button class="c-btn__white">
+        <a href="#contact" class="c-btn__white">
           <p class="c-btn__text -black">かんたん無料買い取りの<br class="is-sp">お申し込みはこちら</p>
-        </button>
+        </a>
       </div>
     </section>
     <section class="l-case">
@@ -576,9 +578,9 @@
       <div class="p-order__sp1">最短査定当日お振込み＆今なら</div>
       <div class="p-order__sp2">査定金額最大<span>6,000</span>円UP</div>
       <div class="p-order__btn -voice">
-        <button class="c-btn__white">
+        <a href="#contact" class="c-btn__white">
           <p class="c-btn__text -black">かんたん無料買い取りの<br class="is-sp">お申し込みはこちら</p>
-        </button>
+        </a>
       </div>
     </section>
     <section class="l-qa">
@@ -841,7 +843,7 @@
         </div>
       </div>
     </section>
-    <section class="l-contact">
+    <section id="contact" class="l-contact">
       <div class="l-inner -campaign">
         <div class="p-contact wow animated fadeIn" data-wow-delay=".5s">
           <div class="p-contact__top">

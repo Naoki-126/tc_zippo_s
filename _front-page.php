@@ -1,44 +1,31 @@
-<?php
-/**
- * The main template file
- *
- * This is the most generic template file in a WordPress theme
- * and one of the two required files for a theme (the other being style.css).
- * It is used to display a page when nothing more specific matches a query.
- * E.g., it puts together the home page when no home.php file exists.
- *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
- *
- * @package tc_zippo_s
- */
+<?php /* Template Name: front-page */?>
 
-get_header();
-?>
+<?php get_header(); ?>
 
 <section class="l-top">
       <div class="l-inner">
         <div class="l-top__nav p-top">
           <div class="l-top__left">
-            <h1 class="p-top__title"><img src="<?php echo get_template_directory_uri(); ?>/img/top-catch_01 1.png" alt="catch1"></h1>
-            <h1 class="p-top__title-sp"><img src="<?php echo get_template_directory_uri(); ?>/img/top-catch_01 sp.png" alt=""></h1>
-            <h2 class="p-top__company"><img src="<?php echo get_template_directory_uri(); ?>/img/top-catch_02 1.png" alt="catch2"></h2>
-            <h2 class="p-top__company-sp"><img src="<?php echo get_template_directory_uri(); ?>/img/top-catch_02 sp.png" alt="catch2"></h2>
+            <h1 class="p-top__title"><img src="img/top-catch_01 1.png" alt="catch1"></h1>
+            <h1 class="p-top__title-sp"><img src="img/top-catch_01 sp.png" alt=""></h1>
+            <h2 class="p-top__company"><img src="img/top-catch_02 1.png" alt="catch2"></h2>
+            <h2 class="p-top__company-sp"><img src="img/top-catch_02 sp.png" alt="catch2"></h2>
             <div class="p-top__contents">
-              <div class="p-top__transfer"><img src="<?php echo get_template_directory_uri(); ?>/img/top-transfer.png" alt="top-transfer"></div>
-              <div class="p-top__transfer-sp"><img src="<?php echo get_template_directory_uri(); ?>/img/top-transferSp.png" alt="top-transferSp"></div>
-              <div class="p-top__price"><img src="<?php echo get_template_directory_uri(); ?>/img/top-price.png" alt="top-price"></div>
-              <div class="p-top__price-sp"><img src="<?php echo get_template_directory_uri(); ?>/img/top-prics-sp.png" alt="top-priceSp"></div>
+              <div class="p-top__transfer"><img src="img/top-transfer.png" alt="top-transfer"></div>
+              <div class="p-top__transfer-sp"><img src="img/top-transferSp.png" alt="top-transferSp"></div>
+              <div class="p-top__price"><img src="img/top-price.png" alt="top-price"></div>
+              <div class="p-top__price-sp"><img src="img/top-prics-sp.png" alt="top-priceSp"></div>
             </div>
               <div class="p-top__btn">
                 <a href="#contact" class="c-btn -shadow">
                   <div class="c-btn__text">お申込みはこちら</div>
                 </a>
               </div>
-              <div class="p-top__archiveSp"><img src="<?php echo get_template_directory_uri(); ?>/img/top-archiveSp.png" alt="top-archiveSp"></div>
+              <div class="p-top__archiveSp"><img src="img/top-archiveSp.png" alt="top-archiveSp"></div>
           </div>
           <div class="l-top__right">
-            <div class="p-top__img"><img src="<?php echo get_template_directory_uri(); ?>/img/top-img.png" alt="top-img"></div>
-            <div class="p-top__archive"><img src="<?php echo get_template_directory_uri(); ?>/img/top-archive.png" alt="top-archive"></div>
+            <div class="p-top__img"><img src="img/top-img.png" alt="top-img"></div>
+            <div class="p-top__archive"><img src="img/top-archive.png" alt="top-archive"></div>
           </div>
         </div>
       </div>
@@ -56,8 +43,8 @@ get_header();
     <section class="l-point">
       <div class="l-inner">
         <div class="p-point">
-          <h2 class="p-point__title"><img src="<?php echo get_template_directory_uri(); ?>/img/point-title.png" alt="point-title"></h2>
-          <h2 class="p-point__title-sp"><img src="<?php echo get_template_directory_uri(); ?>/img/point-title_sp1.png" alt="point-title_sp"></h2>
+          <h2 class="p-point__title"><img src="img/point-title.png" alt="point-title"></h2>
+          <h2 class="p-point__title-sp"><img src="img/point-title_sp1.png" alt="point-title_sp"></h2>
           <div class="p-point__contents">
             <div class="p-point__content">
               <div class="p-point__label">
@@ -113,28 +100,28 @@ get_header();
         <div class="p-step wow animated fadeIn" data-wow-delay=".5s">
           <div class="p-step__concept">安心・安全・スピーディー</div>
           <div class="p-step__top">
-            <div class="p-step__title"><img src="<?php echo get_template_directory_uri(); ?>/img/step-title.png" alt="step-title"></div>
-            <div class="p-step__titleSp"><img src="<?php echo get_template_directory_uri(); ?>/img/step-title__sp.png" alt="step-title"></div>
-            <div class="p-step__logo"><img src="<?php echo get_template_directory_uri(); ?>/img/step-1.svg" alt="step1"></div>
+            <div class="p-step__title"><img src="img/step-title.png" alt="step-title"></div>
+            <div class="p-step__titleSp"><img src="img/step-title__sp.png" alt="step-title"></div>
+            <div class="p-step__logo"><img src="img/step-1.svg" alt="step1"></div>
           </div>
           <ul class="p-step__contents">
             <li class="p-step__content">
-              <div class="p-step__icon"><img src="<?php echo get_template_directory_uri(); ?>/img/step_icon01 1.svg" alt="step-icon1"></div>
+              <div class="p-step__icon"><img src="img/step_icon01 1.svg" alt="step-icon1"></div>
               <div class="p-step__head">WEBまたはLINEから 宅配買取を申し込む</div>
               <div class="p-step__body">お申し込み後、すぐに買取キット(宅配キット、買取申込書)をお送りします</div>
             </li>
             <li class="p-step__content">
-              <div class="p-step__icon"><img src="<?php echo get_template_directory_uri(); ?>/img/step_icon02 1.svg" alt="step-icon2"></div>
+              <div class="p-step__icon"><img src="img/step_icon02 1.svg" alt="step-icon2"></div>
               <div class="p-step__head">制服や付属品を箱に詰めて送る</div>
               <div class="p-step__body">売りたい制服を手持ちの梱包材、または買取キットに詰めてお送りください。送料は無料です。</div>
             </li>
             <li class="p-step__content">
-              <div class="p-step__icon"><img src="<?php echo get_template_directory_uri(); ?>/img/step_icon03 1.svg" alt="step-icon3"></div>
+              <div class="p-step__icon"><img src="img/step_icon03 1.svg" alt="step-icon3"></div>
               <div class="p-step__head">査定結果をメールでご連絡</div>
               <div class="p-step__body">査定結果がメールで届きます。</div>
             </li>
             <li class="p-step__content">
-              <div class="p-step__icon"><img src="<?php echo get_template_directory_uri(); ?>/img/step_icon04 1.svg" alt="step-icon4"></div>
+              <div class="p-step__icon"><img src="img/step_icon04 1.svg" alt="step-icon4"></div>
               <div class="p-step__head">買取希望ならすぐにお振込み</div>
               <div class="p-step__body">買取希望の方は、ご連絡いただき次第、すぐに査定額をお振込みします。</div>
             </li>
@@ -157,7 +144,7 @@ get_header();
               </div>
             </div>
             <div class="p-step__right">
-              <div class="p-step__img"><img src="<?php echo get_template_directory_uri(); ?>/img/step-img.png" alt="step-img"></div>
+              <div class="p-step__img"><img src="img/step-img.png" alt="step-img"></div>
             </div>
           </div>
         </div>
@@ -182,7 +169,7 @@ get_header();
           <ul class="p-case__lists">
             <li class="p-case__list">
               <a href="#" class="p-case__head">
-                <div class="p-case__img"><img src="<?php echo get_template_directory_uri(); ?>/img/zippo-img.png" alt="zippo-img"></div>
+                <div class="p-case__img"><img src="img/zippo-img.png" alt="zippo-img"></div>
               </a>
               <div class="p-case__body">
                 <div class="p-case__subTitle">Supreme ZIPPO</div>
@@ -193,7 +180,7 @@ get_header();
               </div>
             <li class="p-case__list">
               <a href="#" class="p-case__head">
-                <div class="p-case__img"><img src="<?php echo get_template_directory_uri(); ?>/img/zippo-img.png" alt="zippo-img"></div>
+                <div class="p-case__img"><img src="img/zippo-img.png" alt="zippo-img"></div>
               </a>
               <div class="p-case__body">
                 <div class="p-case__subTitle">ZIPPOコカ・コーラCoca-Cola Drinkジッポーライター1981年</div>
@@ -205,7 +192,7 @@ get_header();
             </li>
             <li class="p-case__list">
               <a href="#" class="p-case__head">
-                <div class="p-case__img"><img src="<?php echo get_template_directory_uri(); ?>/img/zippo-img.png" alt="zippo-img"></div>
+                <div class="p-case__img"><img src="img/zippo-img.png" alt="zippo-img"></div>
               </a>
               <div class="p-case__body">
                 <div class="p-case__subTitle">ルパン三世ZIPPOライター 4サイド・チェイス</div>
@@ -217,7 +204,7 @@ get_header();
             </li>
             <li class="p-case__list">
               <a href="#" class="p-case__head">
-                <div class="p-case__img"><img src="<?php echo get_template_directory_uri(); ?>/img/zippo-img.png" alt="zippo-img"></div>
+                <div class="p-case__img"><img src="img/zippo-img.png" alt="zippo-img"></div>
               </a>
               <div class="p-case__body">
                 <div class="p-case__subTitle">ZIPPO(ジッポ) Marlboro(マールボロ) マルボロ アドベンチャーチーム ジープ</div>
@@ -229,7 +216,7 @@ get_header();
             </li>
             <li class="p-case__list">
               <a href="#" class="p-case__head">
-                <div class="p-case__img"><img src="<?php echo get_template_directory_uri(); ?>/img/zippo-img.png" alt="zippo-img"></div>
+                <div class="p-case__img"><img src="img/zippo-img.png" alt="zippo-img"></div>
               </a>
               <div class="p-case__body">
                 <div class="p-case__subTitle">Zippo ジッポ ジッポー ライター 劇場版 魔法少女まどか☆マギカ 新編 叛逆の物語 Ver.2 B 魔法少女</div>
@@ -241,7 +228,7 @@ get_header();
             </li>
             <li class="p-case__list">
               <a href="#" class="p-case__head">
-                <div class="p-case__img"><img src="<?php echo get_template_directory_uri(); ?>/img/zippo-img.png" alt="zippo-img"></div>
+                <div class="p-case__img"><img src="img/zippo-img.png" alt="zippo-img"></div>
               </a>
               <div class="p-case__body">
                 <div class="p-case__subTitle">Marlboro/マルボロカウボーイ/Bコース<br class="is-sp"> 98年製</div>
@@ -253,7 +240,7 @@ get_header();
             </li>
             <li class="p-case__list">
               <a href="#" class="p-case__head">
-                <div class="p-case__img"><img src="<?php echo get_template_directory_uri(); ?>/img/zippo-img.png" alt="zippo-img"></div>
+                <div class="p-case__img"><img src="img/zippo-img.png" alt="zippo-img"></div>
               </a>
               <div class="p-case__body">
                 <div class="p-case__subTitle">ZIPPO Marlboro マルボロ Timeless Collection ターコイズ メタル貼り</div>
@@ -265,7 +252,7 @@ get_header();
             </li>
             <li class="p-case__list">
               <a href="#" class="p-case__head">
-                <div class="p-case__img"><img src="<?php echo get_template_directory_uri(); ?>/img/zippo-img.png" alt="zippo-img"></div>
+                <div class="p-case__img"><img src="img/zippo-img.png" alt="zippo-img"></div>
               </a>
               <div class="p-case__body">
                 <div class="p-case__subTitle">zippo (ジッポー) 1993年製 CAMEL キャメル</div>
@@ -285,8 +272,8 @@ get_header();
     <section class="l-brand">
       <div class="l-inner -brand">
         <div class="p-brand wow animated fadeIn" data-wow-delay=".5s">
-          <h2 class="p-brand__title"><img src="<?php echo get_template_directory_uri(); ?>/img/brand-title_h2.png" alt="brand-titile"></h2>
-          <h2 class="p-brand__titleSp"><img src="<?php echo get_template_directory_uri(); ?>/img/brand-titleSp.png" alt="brand-titileSp"></h2>
+          <h2 class="p-brand__title"><img src="img/brand-title_h2.png" alt="brand-titile"></h2>
+          <h2 class="p-brand__titleSp"><img src="img/brand-titleSp.png" alt="brand-titileSp"></h2>
           <ul class="p-brand__lists">
             <li class="p-brand__list">
               <div class="p-brand__head">
@@ -294,7 +281,7 @@ get_header();
                 <div class="p-brand__line"></div>
               </div>
               <div class="p-brand__body">
-                <div class="p-brand__img"><img src="<?php echo get_template_directory_uri(); ?>/img/zippo-img.png" alt="zippo"></div>
+                <div class="p-brand__img"><img src="img/zippo-img.png" alt="zippo"></div>
                 <div class="p-brand__model">
                   <button class="c-brand__btn">
                     <div class="c-brand__model">ジッポー 真鍮</div>
@@ -308,7 +295,7 @@ get_header();
                 <div class="p-brand__line"></div>
               </div>
               <div class="p-brand__body">
-                <div class="p-brand__img"><img src="<?php echo get_template_directory_uri(); ?>/img/zippo-img.png" alt="zippo"></div>
+                <div class="p-brand__img"><img src="img/zippo-img.png" alt="zippo"></div>
                 <div class="p-brand__model">
                   <button class="c-brand__btn">
                     <div class="c-brand__model">ジッポー キャラクターモデル</div>
@@ -322,7 +309,7 @@ get_header();
                 <div class="p-brand__line"></div>
               </div>
               <div class="p-brand__body">
-                <div class="p-brand__img"><img src="<?php echo get_template_directory_uri(); ?>/img/zippo-img.png" alt="zippo"></div>
+                <div class="p-brand__img"><img src="img/zippo-img.png" alt="zippo"></div>
                 <div class="p-brand__model">
                   <button class="c-brand__btn">
                     <div class="c-brand__model">ジッポー  企業コラボ</div>
@@ -336,7 +323,7 @@ get_header();
                 <div class="p-brand__line"></div>
               </div>
               <div class="p-brand__body">
-                <div class="p-brand__img"><img src="<?php echo get_template_directory_uri(); ?>/img/zippo-img.png" alt="zippo"></div>
+                <div class="p-brand__img"><img src="img/zippo-img.png" alt="zippo"></div>
                 <div class="p-brand__model">
                   <button class="c-brand__btn">
                     <div class="c-brand__model">ジッポー ゴールド</div>
@@ -350,7 +337,7 @@ get_header();
                 <div class="p-brand__line"></div>
               </div>
               <div class="p-brand__body">
-                <div class="p-brand__img"><img src="<?php echo get_template_directory_uri(); ?>/img/zippo-img.png" alt="zippo"></div>
+                <div class="p-brand__img"><img src="img/zippo-img.png" alt="zippo"></div>
                 <div class="p-brand__model">
                   <button class="c-brand__btn">
                     <div class="c-brand__model">ジッポー 革巻き</div>
@@ -364,7 +351,7 @@ get_header();
                 <div class="p-brand__line"></div>
               </div>
               <div class="p-brand__body">
-                <div class="p-brand__img"><img src="<?php echo get_template_directory_uri(); ?>/img/zippo-img.png" alt="zippo"></div>
+                <div class="p-brand__img"><img src="img/zippo-img.png" alt="zippo"></div>
                 <div class="p-brand__model">
                   <button class="c-brand__btn">
                     <div class="c-brand__model">ジッポー ライター</div>
@@ -378,7 +365,7 @@ get_header();
                 <div class="p-brand__line"></div>
               </div>
               <div class="p-brand__body">
-                <div class="p-brand__img"><img src="<?php echo get_template_directory_uri(); ?>/img/zippo-img.png" alt="zippo"></div>
+                <div class="p-brand__img"><img src="img/zippo-img.png" alt="zippo"></div>
                 <div class="p-brand__model">
                   <button class="c-brand__btn">
                     <div class="c-brand__model">ジッポー ペアデザイン</div>
@@ -392,7 +379,7 @@ get_header();
                 <div class="p-brand__line"></div>
               </div>
               <div class="p-brand__body">
-                <div class="p-brand__img"><img src="<?php echo get_template_directory_uri(); ?>/img/zippo-img.png" alt="zippo"></div>
+                <div class="p-brand__img"><img src="img/zippo-img.png" alt="zippo"></div>
                 <div class="p-brand__model">
                   <button class="c-brand__btn">
                     <div class="c-brand__model">ジッポー スターリングシルバー</div>
@@ -406,7 +393,7 @@ get_header();
                 <div class="p-brand__line"></div>
               </div>
               <div class="p-brand__body">
-                <div class="p-brand__img"><img src="<?php echo get_template_directory_uri(); ?>/img/zippo-img.png" alt="zippo"></div>
+                <div class="p-brand__img"><img src="img/zippo-img.png" alt="zippo"></div>
                 <div class="p-brand__model">
                   <button class="c-brand__btn">
                     <div class="c-brand__model">ジッポー レプリカモデル</div>
@@ -420,7 +407,7 @@ get_header();
                 <div class="p-brand__line"></div>
               </div>
               <div class="p-brand__body">
-                <div class="p-brand__img"><img src="<?php echo get_template_directory_uri(); ?>/img/zippo-img.png" alt="zippo"></div>
+                <div class="p-brand__img"><img src="img/zippo-img.png" alt="zippo"></div>
                 <div class="p-brand__model">
                   <button class="c-brand__btn">
                     <div class="c-brand__model">ジッポー ヴィンテージ</div>
@@ -434,7 +421,7 @@ get_header();
                 <div class="p-brand__line"></div>
               </div>
               <div class="p-brand__body">
-                <div class="p-brand__img"><img src="<?php echo get_template_directory_uri(); ?>/img/zippo-img.png" alt="zippo"></div>
+                <div class="p-brand__img"><img src="img/zippo-img.png" alt="zippo"></div>
                 <div class="p-brand__model">
                   <button class="c-brand__btn">
                     <div class="c-brand__model">ジッポー 限定モデル</div>
@@ -448,7 +435,7 @@ get_header();
                 <div class="p-brand__line"></div>
               </div>
               <div class="p-brand__body">
-                <div class="p-brand__img"><img src="<?php echo get_template_directory_uri(); ?>/img/zippo-img.png" alt="zippo"></div>
+                <div class="p-brand__img"><img src="img/zippo-img.png" alt="zippo"></div>
                 <div class="p-brand__model">
                   <button class="c-brand__btn">
                     <div class="c-brand__model">ジッポー 記念モデル</div>
@@ -462,7 +449,7 @@ get_header();
                 <div class="p-brand__line"></div>
               </div>
               <div class="p-brand__body">
-                <div class="p-brand__img"><img src="<?php echo get_template_directory_uri(); ?>/img/zippo-img.png" alt="zippo"></div>
+                <div class="p-brand__img"><img src="img/zippo-img.png" alt="zippo"></div>
                 <div class="p-brand__model">
                   <button class="c-brand__btn">
                     <div class="c-brand__model">ジッポー アニメモデル</div>
@@ -476,7 +463,7 @@ get_header();
                 <div class="p-brand__line"></div>
               </div>
               <div class="p-brand__body">
-                <div class="p-brand__img"><img src="<?php echo get_template_directory_uri(); ?>/img/zippo-img.png" alt="zippo"></div>
+                <div class="p-brand__img"><img src="img/zippo-img.png" alt="zippo"></div>
                 <div class="p-brand__model">
                   <button class="c-brand__btn">
                     <div class="c-brand__model">ジッポー ブランドモデル</div>
@@ -490,7 +477,7 @@ get_header();
                 <div class="p-brand__line"></div>
               </div>
               <div class="p-brand__body">
-                <div class="p-brand__img"><img src="<?php echo get_template_directory_uri(); ?>/img/zippo-img.png" alt="zippo"></div>
+                <div class="p-brand__img"><img src="img/zippo-img.png" alt="zippo"></div>
                 <div class="p-brand__model">
                   <button class="c-brand__btn">
                     <div class="c-brand__model">ジッポー アーティストモデル</div>
@@ -503,30 +490,30 @@ get_header();
       </div>
       <div class="p-brand__footer wow animated fadeIn" data-wow-delay=".5s">
         <div class="p-brand__inner">
-          <h3 class="p-brand__subTitle"><img src="<?php echo get_template_directory_uri(); ?>/img/brand-subTitle_h2.png" alt="brand-subTitle"></h3>
-          <h3 class="p-brand__subTitleSp"><img src="<?php echo get_template_directory_uri(); ?>/img/brand-subSp.png" alt="brand-subSp"></h3>
-            <ul class="p-brand__contents">
-              <li class="p-brand__content">
-                <div class="p-brand__pic"><img src="<?php echo get_template_directory_uri(); ?>/img/brand-img1.png" alt="brand-img1"></div>
-                <div class="p-brand__text">付属品がなくても</div>
-                <div class="p-brand__ok"><img src="<?php echo get_template_directory_uri(); ?>/img/OK!.svg" alt="ok"></div>
-              </li>
-              <li class="p-brand__content">
-                <div class="p-brand__pic"><img src="<?php echo get_template_directory_uri(); ?>/img/brand-img2.png" alt="brand-img2"></div>
-                <div class="p-brand__text -second">インサイド<br>ユニット無しも</div>
-                <div class="p-brand__ok -second"><img src="<?php echo get_template_directory_uri(); ?>/img/OK!.svg" alt="ok"></div>
-              </li>
-              <li class="p-brand__content">
-                <div class="p-brand__pic"><img src="<?php echo get_template_directory_uri(); ?>/img/brand-img3.png" alt="brand-img3"></div>
-                <div class="p-brand__text">キズ・汚れ・変色も</div>
-                <div class="p-brand__ok -third"><img src="<?php echo get_template_directory_uri(); ?>/img/OK!.svg" alt="ok"></div>
-              </li>
-              <li class="p-brand__content">
-                <div class="p-brand__pic"><img src="<?php echo get_template_directory_uri(); ?>/img/brand-img4.png" alt="brand-img4"></div>
-                <div class="p-brand__text">破損・歪みも</div>
-                <div class="p-brand__ok -fourth"><img src="<?php echo get_template_directory_uri(); ?>/img/OK!.svg" alt="ok"></div>
-              </li>
-            </ul>
+          <h3 class="p-brand__subTitle"><img src="img/brand-subTitle_h2.png" alt="brand-subTitle"></h3>
+          <h3 class="p-brand__subTitleSp"><img src="img/brand-subSp.png" alt="brand-subSp"></h3>
+          <ul class="p-brand__contents">
+            <li class="p-brand__content">
+              <div class="p-brand__pic"><img src="img/brand-img1.png" alt="brand-img1"></div>
+              <div class="p-brand__text">付属品がなくても</div>
+              <div class="p-brand__ok"><img src="img/OK!.svg" alt="ok"></div>
+            </li>
+            <li class="p-brand__content">
+              <div class="p-brand__pic"><img src="img/brand-img2.png" alt="brand-img2"></div>
+              <div class="p-brand__text -second">インサイド<br>ユニット無しも</div>
+              <div class="p-brand__ok -second"><img src="img/OK!.svg" alt="ok"></div>
+            </li>
+            <li class="p-brand__content">
+              <div class="p-brand__pic"><img src="img/brand-img3.png" alt="brand-img3"></div>
+              <div class="p-brand__text">キズ・汚れ・変色も</div>
+              <div class="p-brand__ok -third"><img src="img/OK!.svg" alt="ok"></div>
+            </li>
+            <li class="p-brand__content">
+              <div class="p-brand__pic"><img src="img/brand-img4.png" alt="brand-img4"></div>
+              <div class="p-brand__text">破損・歪みも</div>
+              <div class="p-brand__ok -fourth"><img src="img/OK!.svg" alt="ok"></div>
+            </li>
+          </ul>
         </div>
       </div>
     </section>
@@ -541,7 +528,7 @@ get_header();
             <li class="p-voice__comment">
               <div class="p-voice__left">
                 <div class="p-voice__person">
-                  <div class="p-voice__img"><img src="<?php echo get_template_directory_uri(); ?>/img/voice-person.png" alt="voice-person"></div>
+                  <div class="p-voice__img"><img src="img/voice-person.png" alt="voice-person"></div>
                   <p class="p-voice__profile">30代/男性<br>自営業（東京）</p>
                 </div>
               </div>
@@ -556,7 +543,7 @@ get_header();
             <li class="p-voice__comment -revers">
               <div class="p-voice__left">
                 <div class="p-voice__person -revers">
-                  <div class="p-voice__img"><img src="<?php echo get_template_directory_uri(); ?>/img/voice-person.png" alt="voice-person"></div>
+                  <div class="p-voice__img"><img src="img/voice-person.png" alt="voice-person"></div>
                   <p class="p-voice__profile">40代/男性<br>会社員（福岡）</p>
                 </div>
               </div>
@@ -571,7 +558,7 @@ get_header();
             <li class="p-voice__comment">
               <div class="p-voice__left">
                 <div class="p-voice__person">
-                  <div class="p-voice__img"><img src="<?php echo get_template_directory_uri(); ?>/img/voice-person.png" alt="voice-person"></div>
+                  <div class="p-voice__img"><img src="img/voice-person.png" alt="voice-person"></div>
                   <p class="p-voice__profile">50代/男性<br>自営業（埼玉）</p>
                 </div>
               </div>
@@ -608,7 +595,6 @@ get_header();
             <li id="qa__3" class="p-qa__category">配送について</li>
             <li id="qa__4" class="p-qa__category">査定について</li>
           </ul>
-
           <div id="js-qa__1" class="l-qa__1  is-show">
             <div class="p-qa__lists">
               <div class="p-qa__list">
@@ -800,7 +786,7 @@ get_header();
       <div class="l-inner -feature">
         <div class="p-feature wow animated fadeIn" data-wow-delay=".5s">
           <div class="p-feature__top">
-            <h2 class="p-feature__title"><img src="<?php echo get_template_directory_uri(); ?>/img/feature-logo.png" alt="feature-logo"></h2>
+            <h2 class="p-feature__title"><img src="img/feature-logo.png" alt="feature-logo"></h2>
           </div>
           <div class="p-feature__low">
             <div class="p-feature__tag">専門の鑑定士のみが査定します</div>
@@ -814,7 +800,7 @@ get_header();
       <div class="l-inner -feature">
         <div class="p-about wow animated fadeIn" data-wow-delay=".5s">
           <div class="p-about__top">
-            <h2 class="p-about__title"><img src="<?php echo get_template_directory_uri(); ?>/img/about-logo.png" alt="about-logo"></h2>
+            <h2 class="p-about__title"><img src="img/about-logo.png" alt="about-logo"></h2>
           </div>
           <div class="p-about__low">
             <div class="p-about__middle">ジッポ（ZIPPO）ライターの買取なら</div>
@@ -830,7 +816,7 @@ get_header();
       <div class="l-inner -campaign">
         <div class="p-campaign wow animated fadeIn" data-wow-delay=".5s">
           <div class="p-campaign__top">
-            <h2 class="p-campaign__title"><img src="<?php echo get_template_directory_uri(); ?>/img/campaign-logo.png" alt="campaign-logo"></h2>
+            <h2 class="p-campaign__title"><img src="img/campaign-logo.png" alt="campaign-logo"></h2>
           </div>
           <div class="p-campaign__detail">キャンペーン内容</div>
           <div class="p-campaign__contents">
@@ -839,12 +825,12 @@ get_header();
               <p class="p-campaign__accent">買取合計から更に金額が上乗せ！</p>
             </div>
             <div class="p-campaign__body">
-              <div class="p-campaign__special1"><img src="<?php echo get_template_directory_uri(); ?>/img/campaign-1.svg" alt="campaign-1"></div>
-              <div class="p-campaign__special2"><img src="<?php echo get_template_directory_uri(); ?>/img/campaign-2.svg" alt="campaign-2"></div>
-              <div class="p-campaign__special3"><img src="<?php echo get_template_directory_uri(); ?>/img/campaign-3.svg" alt="campaign-3"></div>
+              <div class="p-campaign__special1"><img src="img/campaign-1.svg" alt="campaign-1"></div>
+              <div class="p-campaign__special2"><img src="img/campaign-2.svg" alt="campaign-2"></div>
+              <div class="p-campaign__special3"><img src="img/campaign-3.svg" alt="campaign-3"></div>
             </div>
             <div class="p-campaign__footer">
-                <div class="p-campaign__upper"><img src="<?php echo get_template_directory_uri(); ?>/img/campaign-icon.png" alt="campaign-icon"></div>
+                <div class="p-campaign__upper"><img src="img/campaign-icon.png" alt="campaign-icon"></div>
               <div class="p-campaign__center">
                 <div class="p-campaign__tag">査定金額最大6,000UPキャンペーン</div>
                 <p class="p-campaign__description">キャンペーン適用期間</p>
@@ -909,8 +895,8 @@ get_header();
                 <label><input type="radio" name="your-radio"><span>買取キットを希望する</span></label>
               </div>
               <div class="p-contact__body">
-                <div class="p-contact__need"><img src="<?php echo get_template_directory_uri(); ?>/img/contact-need.png" alt="contact-need"></div>
-                <div class="p-contact__need-sp"><img src="<?php echo get_template_directory_uri(); ?>/img/contact-need__sp.png" alt="contact-need"></div>
+                <div class="p-contact__need"><img src="img/contact-need.png" alt="contact-need"></div>
+                <div class="p-contact__need-sp"><img src="img/contact-need__sp.png" alt="contact-need"></div>
               </div>
             </div>
             <div class="p-contact__check">
