@@ -10,7 +10,7 @@
 get_header();
 ?>
 
-<main class="l-inner -campaign">
+<div class="l-inner -campaign">
 	<div class="l-breadcrumbs">
 		<?php
 			if ( function_exists( 'bcn_display' ) ) {
@@ -43,6 +43,6 @@ get_header();
 
 		<?php endwhile; ?>
 	<?php endif; ?>
-</main>
+</div>
 
 <?php get_footer(); ?>
